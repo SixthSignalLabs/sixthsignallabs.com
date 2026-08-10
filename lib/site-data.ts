@@ -1,6 +1,6 @@
 export type NavigationItem = {
   readonly label: string;
-  readonly href: `#${string}`;
+  readonly href: string;
 };
 
 export type ActionLink = {
@@ -180,11 +180,11 @@ export type SiteData = {
 };
 
 export const navigationItems = [
-  { label: "Work", href: "#work" },
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/#work" },
+  { label: "Services", href: "/#services" },
+  { label: "Process", href: "/#process" },
+  { label: "About", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
 ] as const satisfies readonly NavigationItem[];
 
 export const services = [
@@ -513,8 +513,8 @@ export const siteData = {
       { label: "X", href: null, isPlaceholder: true },
     ],
     legalLinks: [
-      { label: "Privacy", href: null, isPlaceholder: true },
-      { label: "Terms", href: null, isPlaceholder: true },
+      { label: "Privacy", href: "/privacy" },
+      { label: "Terms", href: "/terms" },
     ],
     copyright: "© Sixth Signal Labs",
   },
