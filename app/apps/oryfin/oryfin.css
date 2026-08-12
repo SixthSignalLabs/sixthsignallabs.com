@@ -1,0 +1,75 @@
+.oryfin-site {
+  --oryfin-violet: #5b5cf6;
+  --oryfin-violet-dark: #3437c9;
+  --oryfin-violet-soft: #e9e8ff;
+  --oryfin-mint: #00b894;
+  --oryfin-coral: #ff6b3d;
+  --oryfin-amber: #f6a828;
+  --oryfin-page: #f7f8fc;
+  --oryfin-ink: #101828;
+  --oryfin-copy: #475467;
+  --oryfin-muted: #667085;
+  --oryfin-line: #e4e7ee;
+  --oryfin-navy: #0b0f1b;
+  min-height: 100vh;
+  background: var(--oryfin-page);
+  color: var(--oryfin-ink);
+}
+
+.oryfin-arc-line {
+  background: linear-gradient(90deg, #5b4be1, #8a4fd6 38%, #e55d68 70%, #f6a828);
+}
+
+.oryfin-dot-grid {
+  background-image: radial-gradient(rgba(91, 92, 246, 0.15) 0.75px, transparent 0.75px);
+  background-size: 18px 18px;
+}
+
+@media print {
+  @page {
+    margin: 18mm;
+  }
+
+  .oryfin-site {
+    background: white !important;
+    color: black !important;
+  }
+
+  .oryfin-screen-only,
+  .oryfin-site header,
+  .oryfin-site footer,
+  .oryfin-legal-toc,
+  .skip-link,
+  body::before {
+    display: none !important;
+  }
+
+  .oryfin-legal-shell,
+  .oryfin-legal-article {
+    display: block !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .oryfin-legal-hero {
+    border: 0 !important;
+    background: white !important;
+  }
+
+  .oryfin-legal-section {
+    break-inside: avoid-page;
+    border-color: #bbb !important;
+  }
+
+  .oryfin-legal-section a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+
+  .oryfin-legal-section a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    overflow-wrap: anywhere;
+    font-size: 0.8em;
+  }
+}
