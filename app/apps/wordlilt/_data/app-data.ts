@@ -24,6 +24,14 @@ const APP_SUPPORT_EMAIL = "wordlilt@sixthsignallabs.com";
 const APP_SUPPORT_HREF = `mailto:${APP_SUPPORT_EMAIL}`;
 const APP_PACKAGE = "com.sixthsignallabs.wordlilt";
 const LEGAL_LAST_UPDATED = "October 8, 2026";
+const PRIVACY_LAST_UPDATED = "October 9, 2026";
+const GOOGLE_PROVIDER_LINKS = [
+  { label: "Google Privacy Policy", href: "https://policies.google.com/privacy" },
+  {
+    label: "How Google uses information from sites or apps that use its services",
+    href: "https://policies.google.com/technologies/partner-sites",
+  },
+] as const;
 const LEGAL_APP_SUMMARY = `${APP_NAME} (${APP_PACKAGE}) is a colorful mobile word-search puzzle game by Sixth Signal Labs. Players swipe through a letter grid to uncover hidden words, complete themed puzzles, and progress through levels.`;
 
 export type AppLegalBlock =
@@ -38,6 +46,15 @@ export type AppLegalBlock =
   | {
       readonly type: "notice";
       readonly text: string;
+    }
+  | {
+      readonly type: "subheading";
+      readonly id: string;
+      readonly text: string;
+    }
+  | {
+      readonly type: "links";
+      readonly items: readonly { readonly label: string; readonly href: string }[];
     };
 
 export type AppLegalDocument = {
@@ -216,9 +233,9 @@ export const appData = {
       description: `How ${APP_NAME} handles information and protects player privacy.`,
       effectiveDate: LEGAL_LAST_UPDATED,
       introduction: [
-        LEGAL_APP_SUMMARY,
-        `Last updated: ${LEGAL_LAST_UPDATED}.`,
-        `Game progress and settings are stored on your device. ${APP_NAME} does not provide an account, cloud sync, or a Sixth Signal Labs user-data backend, and does not include a product analytics SDK or crash-reporting SDK. The free game is supported by Google AdMob ads.`,
+        `${LEGAL_APP_SUMMARY} This policy describes the Android version of ${APP_NAME}.`,
+        `Last updated: ${PRIVACY_LAST_UPDATED}.`,
+        `Game progress and settings are stored on your device. ${APP_NAME} does not provide an account, cloud sync, or a Sixth Signal Labs user-data backend. The free game is supported by Google AdMob ads, and Google's advertising software in the app sends some information directly to Google, as described below.`,
       ],
       sections: [
         {
@@ -228,35 +245,68 @@ export const appData = {
           blocks: [
             {
               type: "paragraph",
-              text: `${APP_NAME} is local-first. Most information is created and stored on your device when you play.`,
-            },
-            {
-              type: "paragraph",
-              text: "Information generated or stored on your device includes:",
+              text: `Most of what ${APP_NAME} needs to run is created and stored on your device when you play:`,
             },
             {
               type: "list",
               items: [
                 "Game progress, such as puzzle progress, found words, and scores.",
                 "In-game balances and items, such as coins and hints, and a record of rewards already credited.",
-                "App settings, such as sound preferences.",
-                "A local ad-frequency record used only to pace interstitial ads on the device.",
+                "App settings, such as sound and haptics preferences.",
+                "A local ad-frequency record used to pace interstitial ads on the device.",
               ],
             },
             {
               type: "paragraph",
-              text: `Information that may be handled by the operating system or third-party SDKs (not by a ${APP_NAME} server) includes:`,
+              text: `Sixth Signal Labs does not use a separate gameplay analytics or crash-reporting service in ${APP_NAME}, so we do not receive reports of how you play. This does not mean that no information leaves your device: Google's advertising software processes its own interaction and diagnostic information, as described in the next part of this section.`,
+            },
+            {
+              type: "subheading",
+              id: "advertising-and-privacy-choices",
+              text: "Advertising and privacy choices",
+            },
+            {
+              type: "paragraph",
+              text: `${APP_NAME} shows Google AdMob interstitial ads and optional rewarded ads. It uses Google's User Messaging Platform (UMP) to check whether consent is needed and to show Google's consent message where required, before ads are requested.`,
+            },
+            {
+              type: "paragraph",
+              text: "When ads are requested or shown, the Google Mobile Ads SDK in the app sends information directly to Google. Depending on your device, region, settings, and consent choices, this may include:",
             },
             {
               type: "list",
               items: [
-                "Google AdMob interstitial and rewarded ads, plus Google UMP consent signals and ad-related device signals, including the device advertising ID where available, when ads are allowed.",
-                `If device backup is turned on, Android may include ${APP_NAME}'s locally stored game data in your device backup, according to your device and Google account settings.`,
+                "Your IP address, which may be used to estimate your approximate location.",
+                "Advertising and other device or app identifiers where available, such as the Android advertising ID and app set ID. Not every identifier is collected on every device.",
+                "App and ad interactions, such as app launches, ad views, taps, and completed rewarded ads.",
+                "Diagnostic and performance information about the app and the advertising SDK, such as app launch time and responsiveness.",
+                "Your consent choices and related consent signals recorded through Google's consent tools.",
               ],
             },
             {
               type: "paragraph",
-              text: `${APP_NAME} does not collect account credentials, does not create ${APP_NAME} user accounts, and does not run a product analytics SDK or crash-reporting SDK. ${APP_NAME} does not request access to your camera, location, microphone, contacts, or photos.`,
+              text: "Google uses this information to serve ads, measure and analyze ad performance, diagnose problems, and prevent fraud and abuse. Whether ads are personalized depends on your consent choices, your region, and your Google ad settings.",
+            },
+            {
+              type: "paragraph",
+              text: `${APP_NAME} does not request permission to access your device's location, camera, microphone, contacts, or photos. Google may still estimate your approximate location from your IP address, as described above.`,
+            },
+            {
+              type: "paragraph",
+              text: `To review or change your ad consent choices, open Settings in ${APP_NAME} and choose Ad privacy. Where Google's privacy options are available for your device and region, this opens Google's privacy options form. You can also reset or delete your Android advertising ID in your device settings. Google explains how it handles this information here:`,
+            },
+            {
+              type: "links",
+              items: GOOGLE_PROVIDER_LINKS,
+            },
+            {
+              type: "subheading",
+              id: "support-emails",
+              text: "Support emails",
+            },
+            {
+              type: "paragraph",
+              text: `If you email ${APP_SUPPORT_EMAIL}, we receive your email address, your message, and any attachments you choose to send. We use them to respond to your request.`,
             },
           ],
         },
@@ -267,20 +317,20 @@ export const appData = {
           blocks: [
             {
               type: "paragraph",
-              text: `We use information only to operate ${APP_NAME} as described below:`,
+              text: `We use information to operate ${APP_NAME} as described below:`,
             },
             {
               type: "list",
               items: [
                 "Provide word-search gameplay and keep your progress on your device.",
                 "Remember your settings and in-game balances between sessions.",
-                "Show ads that support the free game, including optional rewarded ads you choose to watch for an in-game hint, and manage ad consent where Google UMP is presented.",
-                `Rely on platform-level protections for ordinary security and abuse prevention; ${APP_NAME} does not operate a separate user-data backend for this purpose.`,
+                "Show ads that support the free game, including optional rewarded ads you choose to watch for in-game help, and manage ad consent where Google's consent tools apply.",
+                "Respond to support emails you send us.",
               ],
             },
             {
               type: "paragraph",
-              text: `Because ${APP_NAME} does not include a product analytics or crash-reporting SDK, we do not collect in-app telemetry for product improvement beyond what is needed on-device to run the features above.`,
+              text: "Google's use of advertising information, including for ad measurement, diagnostics, and fraud prevention, is described in Advertising and privacy choices above and in Google's policies.",
             },
           ],
         },
@@ -291,22 +341,40 @@ export const appData = {
           blocks: [
             {
               type: "paragraph",
-              text: `${APP_NAME} does not upload your game data to a Sixth Signal Labs server. Parties that may receive information in limited situations are:`,
+              text: `${APP_NAME} does not upload your game progress to a Sixth Signal Labs server. Information is shared with or handled by others in these situations:`,
             },
             {
               type: "list",
               items: [
-                "Google — AdMob ads and UMP consent when ads are requested or consent choices are managed.",
-                "Google — Android device backup, if you have turned it on for your device.",
+                "Google, through the Google Mobile Ads SDK and Google's consent tools, when ads are requested or shown and when consent choices are checked or changed.",
+                "Your device's backup service, such as Google backup on Android, if backup is turned on for your device.",
               ],
             },
             {
               type: "paragraph",
-              text: `Retention: game progress, in-game balances, and settings remain on your device until you clear app data or uninstall ${APP_NAME}. Ad and consent-related data are subject to Google’s policies. ${APP_NAME} has no server-side retention of your game data because there is no user-data backend.`,
+              text: "Google states that data collected by its Mobile Ads SDK is encrypted in transit.",
+            },
+            {
+              type: "subheading",
+              id: "retention-and-deletion",
+              text: "Retention and deletion",
+            },
+            {
+              type: "list",
+              items: [
+                `Game progress and settings on your device: these stay on your device until you clear ${APP_NAME}'s storage or uninstall ${APP_NAME}. Either action removes ${APP_NAME}'s local data from that device.`,
+                `Device backups: ${APP_NAME} allows Android's standard app-data backup. If backup is turned on, Android may include ${APP_NAME}'s local game data in your device backup and may restore it when ${APP_NAME} is reinstalled, according to your device and Google account settings. Clearing storage or uninstalling ${APP_NAME} does not necessarily delete existing backup copies. You can manage backups in your device or Google account settings.`,
+                `Advertising and consent information held by Google: Google retains this information under its own policies. Clearing storage or uninstalling ${APP_NAME} does not delete information Google has already received.`,
+                `Support emails: messages you send to ${APP_SUPPORT_EMAIL} are stored in our email account so we can respond. To ask us to delete your support correspondence, contact us at the same address.`,
+              ],
             },
             {
               type: "paragraph",
-              text: "Ad and consent requests to Google use standard HTTPS. We do not claim special encryption certifications beyond ordinary platform and transport protections.",
+              text: "Google explains how it handles and retains advertising information in its policies:",
+            },
+            {
+              type: "links",
+              items: GOOGLE_PROVIDER_LINKS,
             },
           ],
         },
@@ -322,20 +390,24 @@ export const appData = {
             {
               type: "list",
               items: [
-                `Where Google UMP consent is shown, you can manage ad personalization and related consent choices, including later through the ad privacy option in ${APP_NAME}’s settings.`,
+                `Review or change ad consent choices through Settings > Ad privacy in ${APP_NAME}, where Google's privacy options are available for your device and region.`,
                 "Rewarded ads are optional. You can keep playing without watching them.",
-                "You can reset or delete your device advertising ID in your device settings.",
-                `Remove ${APP_NAME}’s local data by clearing app storage or uninstalling ${APP_NAME}.`,
+                "Reset or delete your Android advertising ID in your device settings.",
+                `Remove ${APP_NAME}'s local data by clearing its storage or uninstalling it. This does not delete device backups or information Google has already received.`,
                 `There is no ${APP_NAME} account, so there is no separate account-deletion flow.`,
               ],
             },
             {
               type: "paragraph",
-              text: `Depending on where you live, you may have rights to access, correct, delete, or opt out of certain processing of personal information. Because ${APP_NAME} is local-first and does not maintain a user-data backend, many requests are fulfilled by actions you take on the device. For questions or rights requests that apply to Sixth Signal Labs or ${APP_NAME}, contact ${APP_SUPPORT_EMAIL}.`,
+              text: `Depending on where you live, you may have rights to access, correct, delete, or opt out of certain processing of personal information. For information held by Google, use Google's controls described in its Privacy Policy. For questions or requests about information Sixth Signal Labs handles for ${APP_NAME}, including support correspondence, contact us:`,
+            },
+            {
+              type: "links",
+              items: [{ label: `Email ${APP_SUPPORT_EMAIL}`, href: APP_SUPPORT_HREF }],
             },
             {
               type: "paragraph",
-              text: `We may update this Privacy Policy from time to time. When we do, we will revise the “Last updated” date above. Continued use of ${APP_NAME} after an update means you should review the revised policy.`,
+              text: `We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above. Please review the policy when it changes.`,
             },
           ],
         },

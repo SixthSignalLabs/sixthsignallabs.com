@@ -25,6 +25,38 @@ function LegalBlock({ block }: { block: AppLegalBlock }) {
     );
   }
 
+  if (block.type === "subheading") {
+    return (
+      <h3
+        id={block.id}
+        className="mt-10 mb-4 scroll-mt-28 text-balance text-[clamp(1.35rem,2.4vw,1.75rem)] leading-[1.15] font-medium tracking-[-0.035em] text-[var(--ink)]"
+      >
+        {block.text}
+      </h3>
+    );
+  }
+
+  if (block.type === "links") {
+    return (
+      <ul className="my-6 space-y-3 text-[1rem] leading-7 sm:text-[1.06rem]">
+        {block.items.map((item) => (
+          <li key={item.href}>
+            <a
+              href={item.href}
+              className="group inline-flex items-start gap-2 rounded-sm font-medium text-[var(--blue-deep)] underline decoration-[var(--blue)]/35 underline-offset-4 transition-colors hover:text-[var(--ink)] hover:decoration-current focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue)]"
+            >
+              <span>{item.label}</span>
+              <ArrowUpRight
+                aria-hidden="true"
+                className="mt-[0.4rem] size-3.5 shrink-0 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 motion-reduce:transition-none"
+              />
+            </a>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   if (block.type === "notice") {
     return (
       <p className="my-6 border-l-2 border-[var(--blue)] bg-[var(--paper-2)] px-5 py-4 font-mono text-[0.76rem] leading-6 tracking-[0.015em] text-[var(--blue-deep)] sm:px-6">
