@@ -1,4 +1,7 @@
+"use client";
+
 import { ArrowUpRight, Smartphone } from "lucide-react";
+import posthog from "posthog-js";
 
 import { appData } from "../_data/app-data";
 
@@ -19,6 +22,11 @@ export function AppStoreCta() {
       href={playStoreUrl}
       target="_blank"
       rel="noreferrer"
+      onClick={() => {
+        if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+          posthog.capture("app_store_clicked", { product: "wordlilt", platform: "play" });
+        }
+      }}
       className="group inline-flex min-h-12 w-fit items-center justify-center gap-2.5 rounded-full border border-[var(--ink)] bg-[var(--ink)] px-5 text-sm font-semibold text-white transition-colors hover:border-[var(--blue)] hover:bg-[var(--blue)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue-bright)] focus-visible:ring-offset-2 motion-reduce:transition-none"
     >
       {playStoreLabel}

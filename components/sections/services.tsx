@@ -13,6 +13,7 @@ import {
   Workflow,
 } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import posthog from "posthog-js";
 
 import { Container } from "@/components/ui/container";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -233,6 +234,15 @@ export function Services() {
   const reduceMotion = useReducedMotion();
   const activeService = services.find((service) => service.id === activeId) ?? services[0];
 
+  const selectService = (service: Service) => {
+    setActiveId(service.id);
+
+    if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+      posthog.capture("service_selected", { service_id: service.id });
+      posthog.logger.info("service_selected", { service_id: service.id });
+    }
+  };
+
   return (
     <section id="services" aria-labelledby="services-heading" className="section-pad bg-paper">
       <Container>
@@ -279,7 +289,7 @@ export function Services() {
                   type="button"
                   aria-pressed={active}
                   aria-controls="service-preview"
-                  onClick={() => setActiveId(service.id)}
+                  onClick={() => selectService(service)}
                   onFocus={() => setActiveId(service.id)}
                   onPointerEnter={() => setActiveId(service.id)}
                   className="group w-full border-b border-line py-6 text-left md:py-8"

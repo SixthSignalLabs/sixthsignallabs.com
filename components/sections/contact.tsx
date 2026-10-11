@@ -1,4 +1,7 @@
+"use client";
+
 import { ArrowUpRight, Mail, Radio } from "lucide-react";
+import posthog from "posthog-js";
 
 import { Container } from "@/components/ui/container";
 import { siteData } from "@/lib/site-data";
@@ -30,6 +33,12 @@ export function Contact() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href={mailto}
+              onClick={() => {
+                if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+                  posthog.capture("contact_initiated", { action: "primary_cta" });
+                  posthog.logger.info("contact_initiated", { action: "primary_cta" });
+                }
+              }}
               className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-semibold text-white shadow-float transition-transform duration-300 hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-blue-bright focus-visible:ring-offset-4"
             >
               {contactSection.primaryAction.label}
@@ -38,6 +47,11 @@ export function Contact() {
             <a
               href={mailto}
               aria-label={`${contactSection.email.value}, placeholder email address`}
+              onClick={() => {
+                if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+                  posthog.capture("contact_initiated", { action: "email_address" });
+                }
+              }}
               className="inline-flex min-h-14 items-center gap-3 rounded-full border border-ink/15 bg-white/60 px-6 py-4 text-sm font-medium text-ink backdrop-blur transition-colors hover:bg-white"
             >
               <Mail className="size-4 text-blue" aria-hidden="true" />

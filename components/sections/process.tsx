@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ArrowRight, Check, Compass, Grid3X3, RadioTower, Workflow } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import posthog from "posthog-js";
 
 import { Container } from "@/components/ui/container";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -70,6 +71,15 @@ export function Process() {
   const reduceMotion = useReducedMotion();
   const activeStage = processStages[activeIndex];
 
+  const selectProcessStage = (index: number) => {
+    setActiveIndex(index);
+
+    if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+      posthog.capture("process_stage_selected", { stage_id: processStages[index].id });
+      posthog.logger.info("process_stage_selected", { stage_id: processStages[index].id });
+    }
+  };
+
   return (
     <section id="process" aria-labelledby="process-heading" className="section-pad bg-paper">
       <Container>
@@ -123,7 +133,7 @@ export function Process() {
                   type="button"
                   aria-pressed={active}
                   aria-controls="process-stage-detail"
-                  onClick={() => setActiveIndex(index)}
+                  onClick={() => selectProcessStage(index)}
                   onFocus={() => setActiveIndex(index)}
                   className={`group relative min-h-52 overflow-hidden rounded-2xl border p-5 text-left transition-[border-color,background-color,transform] duration-300 md:min-h-64 ${
                     active

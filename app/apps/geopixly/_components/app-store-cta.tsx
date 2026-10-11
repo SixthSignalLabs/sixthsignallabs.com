@@ -1,4 +1,7 @@
+"use client";
+
 import { ArrowUpRight } from "lucide-react";
+import posthog from "posthog-js";
 
 import { appData } from "../_data/app-data";
 
@@ -17,6 +20,11 @@ export function AppStoreCta({ compact = false, platform = "both" }: AppStoreCtaP
       {showPlay ? (
         <a
           href={appData.storeLinks.playStore.href}
+          onClick={() => {
+            if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+              posthog.capture("app_store_clicked", { product: "geopixly", platform: "play" });
+            }
+          }}
           className={`group inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-[var(--ink)] bg-[var(--ink)] font-semibold text-white transition-colors hover:border-[var(--blue)] hover:bg-[var(--blue)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue-bright)] focus-visible:ring-offset-2 motion-reduce:transition-none ${sizeClass}`}
         >
           {appData.storeLinks.playStore.label}
@@ -33,6 +41,11 @@ export function AppStoreCta({ compact = false, platform = "both" }: AppStoreCtaP
             href={appData.storeLinks.appStore.href}
             target="_blank"
             rel="noreferrer"
+            onClick={() => {
+              if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
+                posthog.capture("app_store_clicked", { product: "geopixly", platform: "ios" });
+              }
+            }}
             className={`group inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-[var(--ink)] bg-[var(--ink)] font-semibold text-white transition-colors hover:border-[var(--blue)] hover:bg-[var(--blue)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue-bright)] focus-visible:ring-offset-2 motion-reduce:transition-none ${sizeClass}`}
           >
             {appData.storeLinks.appStore.label}
