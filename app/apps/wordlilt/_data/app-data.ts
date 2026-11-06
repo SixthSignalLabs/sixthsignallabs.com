@@ -28,17 +28,17 @@ const LEGAL_APP_SUMMARY = `${APP_NAME} (${APP_PACKAGE}) is a colorful mobile wor
 
 export type AppLegalBlock =
   | {
-      readonly type: "paragraph";
-      readonly text: string;
-    }
+    readonly type: "paragraph";
+    readonly text: string;
+  }
   | {
-      readonly type: "list";
-      readonly items: readonly string[];
-    }
+    readonly type: "list";
+    readonly items: readonly string[];
+  }
   | {
-      readonly type: "notice";
-      readonly text: string;
-    };
+    readonly type: "notice";
+    readonly text: string;
+  };
 
 export type AppLegalDocument = {
   readonly slug: "privacy" | "terms";
@@ -95,7 +95,7 @@ export const appData = {
     // (https://play.google.com/store/apps/details?id=com.sixthsignallabs.wordlilt)
     // only after the listing is live. While null, every store CTA renders a
     // non-interactive "Coming soon to Android" state.
-    playStoreUrl: null as string | null,
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.sixthsignallabs.wordlilt',
     playStoreLabel: "Get it on Google Play",
     unavailableLabel: "Coming soon to Android",
   },

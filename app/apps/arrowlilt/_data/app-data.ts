@@ -56,7 +56,7 @@ export const appData = {
   productScreenshotAlt: `${APP_NAME} puzzle board with colored arrow paths on a cream grid`,
   availability: {
     // TODO: set to the verified Google Play URL once the listing is live.
-    playStoreUrl: null as string | null,
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.sixthsignallabs.arrowlilt',
     playStoreLabel: "Get it on Google Play",
     unavailableLabel: "Coming soon to Android",
     // TODO: set once the iOS App Store listing is live.

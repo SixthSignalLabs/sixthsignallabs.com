@@ -6,17 +6,17 @@ const APP_SUPPORT_EMAIL = "geopixly@sixthsignallabs.com";
 
 export type AppLegalBlock =
   | {
-      readonly type: "paragraph";
-      readonly text: string;
-    }
+    readonly type: "paragraph";
+    readonly text: string;
+  }
   | {
-      readonly type: "list";
-      readonly items: readonly string[];
-    }
+    readonly type: "list";
+    readonly items: readonly string[];
+  }
   | {
-      readonly type: "notice";
-      readonly text: string;
-    };
+    readonly type: "notice";
+    readonly text: string;
+  };
 
 export type AppLegalDocument = {
   readonly slug: "privacy" | "terms";
@@ -55,7 +55,7 @@ export const appData = {
   storeLinks: {
     playStore: {
       label: "Get it on Google Play",
-      href: "#PLAY_STORE_URL — PLACEHOLDER",
+      href: "https://play.google.com/store/apps/details?id=com.sixthsignallabs.geopixly",
     },
     appStore: null as { label: string; href: string } | null,
   },
