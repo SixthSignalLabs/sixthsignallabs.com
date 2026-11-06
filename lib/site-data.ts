@@ -29,21 +29,23 @@ export type CaseStudy = {
   readonly id: string;
   readonly name: string;
   readonly badge: string;
-  readonly isPlaceholder: true;
   readonly industry: string;
   readonly platforms: readonly string[];
   readonly description: string;
   readonly services: readonly string[];
   readonly image: {
-    readonly src: string | null;
+    readonly src: string;
     readonly alt: string;
+    readonly width: number;
+    readonly height: number;
   };
   readonly metrics: readonly {
     readonly value: string;
     readonly label: string;
   }[];
-  readonly caseStudyHref: string | null;
-  readonly mockup: "mobile" | "browser" | "dashboard";
+  readonly caseStudyHref: string;
+  readonly tagline: string;
+  readonly visualBackground: string;
 };
 
 export type ProcessStage = {
@@ -126,7 +128,6 @@ export type SiteData = {
     readonly eyebrow: string;
     readonly heading: string;
     readonly body: string;
-    readonly placeholderNotice: string;
     readonly items: readonly CaseStudy[];
   };
   readonly processSection: {
@@ -254,58 +255,64 @@ export const services = [
 
 export const caseStudies = [
   {
-    id: "project-one",
-    name: "Project One",
-    badge: "Case study placeholder",
-    isPlaceholder: true,
-    industry: "Industry to be confirmed",
-    platforms: ["Platform to be confirmed"],
+    id: "wordlilt",
+    name: "WordLilt",
+    badge: "Our app",
+    industry: "Word search puzzle",
+    platforms: ["Android"],
     description:
-      "Replace this copy with a verified project overview before publishing client work.",
-    services: ["Services to be confirmed"],
+      "Swipe through colorful letter grids, uncover hidden words, and enjoy a satisfying puzzle break.",
+    services: ["Mobile apps", "UI / UX"],
     image: {
-      src: null,
-      alt: "Project One image placeholder",
+      src: "/apps/wordlilt/work-screenshot.webp",
+      alt: "WordLilt gameplay with a highlighted word in a colorful letter grid",
+      width: 640,
+      height: 1138,
     },
     metrics: [],
-    caseStudyHref: null,
-    mockup: "mobile",
+    caseStudyHref: "/apps/wordlilt",
+    tagline: "Find your next little word escape.",
+    visualBackground: "bg-[#f5eaf0]",
   },
   {
-    id: "project-two",
-    name: "Project Two",
-    badge: "Case study placeholder",
-    isPlaceholder: true,
-    industry: "Industry to be confirmed",
-    platforms: ["Platform to be confirmed"],
+    id: "geopixly",
+    name: "GeoPixly",
+    badge: "Our app",
+    industry: "GPS camera",
+    platforms: ["Android"],
     description:
-      "Replace this copy with a verified project overview before publishing client work.",
-    services: ["Services to be confirmed"],
+      "Stamp precise GPS, date, time, and field telemetry onto photos. On-device processing keeps photos on your phone unless you choose to share them.",
+    services: ["Mobile apps", "UI / UX"],
     image: {
-      src: null,
-      alt: "Project Two image placeholder",
+      src: "/apps/geopixly/work-screenshot.webp",
+      alt: "GeoPixly photo preview showing a construction site stamped with location and date",
+      width: 640,
+      height: 1422,
     },
     metrics: [],
-    caseStudyHref: null,
-    mockup: "browser",
+    caseStudyHref: "/apps/geopixly",
+    tagline: "Stamp location. Keep photos yours.",
+    visualBackground: "bg-[#e8ecfa]",
   },
   {
-    id: "project-three",
-    name: "Project Three",
-    badge: "Case study placeholder",
-    isPlaceholder: true,
-    industry: "Industry to be confirmed",
-    platforms: ["Platform to be confirmed"],
+    id: "arrowlilt",
+    name: "ArrowLilt",
+    badge: "Our app",
+    industry: "Calm arrow puzzle",
+    platforms: ["Android"],
     description:
-      "Replace this copy with a verified project overview before publishing client work.",
-    services: ["Services to be confirmed"],
+      "Find connected arrows, slide them off the board, and grow a botanical garden. An untimed spatial puzzle with no timer, no lives, and no penalty.",
+    services: ["Mobile apps", "UI / UX"],
     image: {
-      src: null,
-      alt: "Project Three image placeholder",
+      src: "/apps/arrowlilt/work-screenshot.webp",
+      alt: "ArrowLilt campaign puzzle with connected arrows on a dark board",
+      width: 640,
+      height: 1387,
     },
     metrics: [],
-    caseStudyHref: null,
-    mockup: "dashboard",
+    caseStudyHref: "/apps/arrowlilt",
+    tagline: "Clear a path. Grow a little calm.",
+    visualBackground: "bg-[#e7eee4]",
   },
 ] as const satisfies readonly CaseStudy[];
 
@@ -454,9 +461,7 @@ export const siteData = {
     eyebrow: "Selected work",
     heading: "Products we've brought to life.",
     body:
-      "A structure for the product stories, design decisions, and engineering work behind selected launches.",
-    placeholderNotice:
-      "Project slots are placeholders for verified case studies; no clients, outcomes, or metrics are represented here.",
+      "From colorful puzzle breaks to practical tools for the field, explore apps designed and built by Sixth Signal Labs.",
     items: caseStudies,
   },
   processSection: {
