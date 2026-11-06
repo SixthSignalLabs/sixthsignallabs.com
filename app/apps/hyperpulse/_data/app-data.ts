@@ -360,8 +360,8 @@ export const legal = {
       section(
         "website",
         "Website analytics, advertising, and cookies",
-        "The native HyperPulse app has no configured advertising SDK, product-analytics SDK, or crash-reporting service. The website is different: its existing site-wide PostHog initialization runs when a project token and host are configured, with automatic capture defaults and exception capture enabled. Website interaction, device/browser, page, and error information may therefore be sent to the configured PostHog host, and browser storage or cookies may be used by that integration.",
-        "The website uses its existing site-wide analytics integration; these HyperPulse pages do not add separate trackers or advertising pixels. Browser storage and cookies may be used by that integration. Hosting providers may process IP addresses, request/browser information, timestamps, and security logs to serve and protect the site. Website analytics is separate from the training records stored locally in HyperPulse.",
+        "The native HyperPulse app has no configured advertising SDK, product-analytics SDK, or crash-reporting service. This website does not include a product-analytics SDK or client-side error-reporting service.",
+        "These HyperPulse pages do not add trackers or advertising pixels. Hosting providers may process IP addresses, request/browser information, timestamps, and security logs to serve and protect the site. Website hosting records are separate from the training records stored locally in HyperPulse.",
       ),
       section(
         "retention",
@@ -369,7 +369,7 @@ export const legal = {
         "Local app data remains in the installation until erased, removed through device controls, or affected by uninstall, device loss, or storage failure. " +
           eraseDisclosure,
         "Exported files and cache copies are separate from the database. Manage separately saved files, shared copies, trash, and destination retention using the relevant app/service controls. Operating-system backups have separate platform settings and lifecycles; removing the app is not a request to delete those backups.",
-        "Support correspondence is retained as needed to handle requests and meet applicable legal obligations. Website hosting/security logs and analytics are retained according to the relevant service settings, operational needs, and applicable obligations. App-store records are independently governed by the store. Retention for these records is separate from the local training database and from files you export.",
+        "Support correspondence is retained as needed to handle requests and meet applicable legal obligations. Website hosting/security logs are retained according to the relevant service settings, operational needs, and applicable obligations. App-store records are independently governed by the store. Retention for these records is separate from the local training database and from files you export.",
       ),
       section(
         "choices",

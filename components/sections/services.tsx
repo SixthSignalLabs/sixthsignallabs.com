@@ -13,7 +13,6 @@ import {
   Workflow,
 } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import posthog from "posthog-js";
 
 import { Container } from "@/components/ui/container";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -236,11 +235,6 @@ export function Services() {
 
   const selectService = (service: Service) => {
     setActiveId(service.id);
-
-    if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
-      posthog.capture("service_selected", { service_id: service.id });
-      posthog.logger.info("service_selected", { service_id: service.id });
-    }
   };
 
   return (

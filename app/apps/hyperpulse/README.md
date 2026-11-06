@@ -32,7 +32,7 @@ The application source is `/Users/kaveen/Files/Dev/Personal/SixthSignalLabs/Apps
 
 Privacy and support retain accurate descriptions of local SQLite storage without separate app encryption, possible OS backups, manual wellness entries, local deterministic Coach rules, foreground timer limitations, and user-controlled exports. Supported JSON imports merge validated records, skip existing session/routine IDs and check-in dates, preserve profile/preferences/selected routine, and reject conflicting unfinished sessions. The selected-file limit is 5 MB. Erasing the database does not remove separately exported files, OS backups, correspondence, website logs, or store records.
 
-The existing website PostHog initialization is disclosed separately from the native app, which has no configured analytics SDK. Provider-specific processing and retention are described without invented durations, locations, or certifications. Global analytics configuration is unchanged.
+Neither the website nor the native app includes a configured product-analytics SDK. Website hosting logs are disclosed separately from local app data. Provider-specific processing and retention are described without invented durations, locations, or certifications.
 
 No AI coaching, accounts, cloud backup/sync, social features, nutrition/hydration, custom exercises, health-platform/wearable integration, automatic workout recognition, background alarms/reminders, exercise videos, timed/distance tracking, monetization, medical outcomes, or guaranteed results are advertised.
 

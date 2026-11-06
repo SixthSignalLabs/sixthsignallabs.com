@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { ArrowRight, Check, Compass, Grid3X3, RadioTower, Workflow } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import posthog from "posthog-js";
 
 import { Container } from "@/components/ui/container";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -73,11 +72,6 @@ export function Process() {
 
   const selectProcessStage = (index: number) => {
     setActiveIndex(index);
-
-    if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
-      posthog.capture("process_stage_selected", { stage_id: processStages[index].id });
-      posthog.logger.info("process_stage_selected", { stage_id: processStages[index].id });
-    }
   };
 
   return (

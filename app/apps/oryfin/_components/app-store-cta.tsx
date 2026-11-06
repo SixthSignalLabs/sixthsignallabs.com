@@ -1,7 +1,6 @@
 "use client";
 
 import { ArrowUpRight } from "lucide-react";
-import posthog from "posthog-js";
 
 import { oryfinPublishing} from "../_data/oryfin-data";
 
@@ -26,11 +25,6 @@ export function AppStoreCta({ compact = false }: AppStoreCtaProps) {
       href={oryfinPublishing.appStoreUrl}
       target="_blank"
       rel="noreferrer"
-      onClick={() => {
-        if (process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST) {
-          posthog.capture("app_store_clicked", { product: "oryfin", platform: "ios" });
-        }
-      }}
       className={`group inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[var(--oryfin-violet)] font-semibold text-white transition-colors hover:bg-[var(--oryfin-violet-dark)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--oryfin-violet)] focus-visible:ring-offset-2 motion-reduce:transition-none ${compact ? "px-4 text-xs" : "px-5 text-sm"}`}
     >
       View on the App Store
