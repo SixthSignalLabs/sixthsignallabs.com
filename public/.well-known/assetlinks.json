@@ -28,5 +28,20 @@
         "8E:CB:91:22:C5:EF:51:4D:45:D9:AB:8F:40:03:4D:B5:77:8F:84:DB:10:13:0E:15:DC:4C:3B:68:B4:5A:76:9B"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sixthsignallabs.arrowlilt",
+      "sha256_cert_fingerprints": [
+        "B9:B3:33:1A:CE:7A:F6:86:E6:F1:8A:56:B3:85:73:F3:98:14:16:C1:7D:B5:62:EF:E5:42:2D:44:FE:28:A2:C1",
+        "D4:AC:75:4D:AF:1D:91:EA:CC:4E:BC:92:DA:23:FF:D0:59:A0:CA:E0:9D:D0:C5:97:61:B9:55:FF:E7:7B:43:02",
+        "CA:2C:AD:F8:E0:C1:4C:F0:62:AE:DF:E5:6F:F2:AB:DB:F7:FF:FD:AD:CC:D9:2C:61:36:5D:E9:84:0D:FE:40:7A"
+      ]
+    }
   }
 ]
