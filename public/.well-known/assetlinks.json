@@ -13,5 +13,20 @@
         "7D:32:08:FA:3D:41:57:F2:22:E9:4A:C1:0A:23:3D:11:28:9B:DA:ED:66:97:91:9C:1B:01:EE:09:10:DA:7B:3F"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sixthsignallabs.geopixly",
+      "sha256_cert_fingerprints": [
+        "E4:DA:31:01:6B:BB:3D:AF:95:CF:B3:72:EB:5B:E0:0C:D1:7A:DC:A7:D1:36:20:FA:09:1D:2A:B7:08:46:CF:B2",
+        "3D:5C:70:F5:7A:B3:7C:60:19:CD:92:A2:30:4D:19:64:B9:83:A6:98:A5:94:CA:7F:B1:C7:C1:C1:45:86:AF:E7",
+        "8E:CB:91:22:C5:EF:51:4D:45:D9:AB:8F:40:03:4D:B5:77:8F:84:DB:10:13:0E:15:DC:4C:3B:68:B4:5A:76:9B"
+      ]
+    }
   }
 ]
