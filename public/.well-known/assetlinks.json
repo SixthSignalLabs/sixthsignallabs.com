@@ -1,0 +1,17 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sixthsignallabs.wordlilt",
+      "sha256_cert_fingerprints": [
+        "EE:7C:0B:33:F6:86:2D:DF:E5:9D:AA:FA:E6:D2:1C:89:41:C2:4A:F5:46:81:85:D7:7D:39:FF:51:54:72:CB:29",
+        "A4:DB:56:27:F9:57:AF:60:80:A4:91:BA:77:7D:B0:94:D4:6D:65:F7:6E:95:FB:D4:FA:84:BF:EC:4B:91:63:56",
+        "7D:32:08:FA:3D:41:57:F2:22:E9:4A:C1:0A:23:3D:11:28:9B:DA:ED:66:97:91:9C:1B:01:EE:09:10:DA:7B:3F"
+      ]
+    }
+  }
+]
