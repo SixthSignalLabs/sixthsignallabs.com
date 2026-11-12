@@ -7,6 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", changeFrequency: "monthly" as const, priority: 1 },
     { path: "/privacy", changeFrequency: "yearly" as const, priority: 0.3 },
     { path: "/terms", changeFrequency: "yearly" as const, priority: 0.3 },
+    { path: "/apps/filesuite", changeFrequency: "monthly" as const, priority: 0.7 },
+    // Legal drafts are linked from the microsite and intentionally noindex.
     { path: "/apps/hyperpulse", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/apps/hyperpulse/support", changeFrequency: "monthly" as const, priority: 0.5 },
     { path: "/apps/hyperpulse/privacy", changeFrequency: "yearly" as const, priority: 0.4 },

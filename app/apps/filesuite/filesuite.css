@@ -1,0 +1,26 @@
+/* App-scoped overrides of the existing studio design tokens. */
+.filesuite-site {
+  --blue: #2563eb;
+  --blue-deep: #1d4ed8;
+  --blue-bright: #2563eb;
+  --ink: #1f2937;
+  --paper: #f3f6fb;
+  --paper-2: #eaf0fa;
+  --slate: #435269;
+  --muted: #53647b;
+  --line: #d5dfed;
+  --surface-dark: #1f2937;
+  --filesuite-teal: #14b8a6;
+  --filesuite-cyan: #06b6d4;
+}
+.filesuite-site summary { cursor: pointer; }
+.filesuite-site summary::marker { color: var(--blue); }
+.filesuite-site .filesuite-tool-index {
+  background: linear-gradient(135deg, #fff, #eaf0fa);
+  border-top: 4px solid var(--filesuite-teal);
+  border-bottom: 4px solid var(--filesuite-cyan);
+}
+@media (max-width: 380px) {
+  .filesuite-site header nav > span,
+  .filesuite-site header nav > a:last-child { max-width: 10rem; padding-inline: 0.75rem; font-size: 0.75rem; }
+}
