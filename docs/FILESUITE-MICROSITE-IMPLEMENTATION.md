@@ -2,6 +2,31 @@
 
 Implemented locally on November 12, 2026. No deployment performed.
 
+## Current legal publication state
+
+The publisher requested removal of draft, approval-status, and release-review
+language and confirmed that FileSuite should be described as using Google
+AdMob, following WordLilt. The public Privacy Policy and Terms & Conditions
+now show **November 12, 2026** under Last updated. They are indexable and both
+legal routes are included in the sitemap. Landing copy and metadata no longer
+refer to legal drafts or pending release review.
+
+WordLilt’s acceptance, license, advertising/UMP, privacy choices, liability,
+updates, and contact conventions were adapted to FileSuite. File-specific
+privacy details come from the newly available FileSuite release privacy
+record and Android configuration. The FileSuite support address is
+`filesuite@sixthsignallabs.com`, as provided in that release record.
+
+AdMob interstitial/rewarded ads, UMP consent, advertising-ID handling, and ad
+privacy choices are documented on the publisher’s explicit instruction to
+treat them as implemented. The inspected native source did not yet include
+those SDKs; this website task does not add them to the Android app. The public
+copy no longer claims the app has no advertising SDK or internet access.
+Earlier sections below describe the initial implementation and are superseded
+by this current-state section where they discuss draft status, legal indexing,
+contact information, missing assets, or advertising.
+
+
 ## Repository discovery and plan
 
 This repository uses Next.js 16 App Router, React 19, TypeScript, Tailwind 4,
@@ -249,3 +274,9 @@ other text, UI, dimensions, and framing. Its draft altered surrounding pixels
 and was discarded. Final compositing used Sharp and the original supplied icon
 to preserve the screenshot precisely. This is now a publisher-requested branded
 edit of the release capture, rather than an unmodified emulator screenshot.
+
+Legal-publication update validation: production build including TypeScript
+passed; scoped ESLint and whitespace checks passed. Production HTML assertions
+verified the November 12, 2026 date, AdMob/UMP disclosures, FileSuite support
+address, indexable robots metadata, absence of draft/review notices, and both
+legal URLs in the generated sitemap.

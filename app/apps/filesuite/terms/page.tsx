@@ -5,7 +5,7 @@ import { pageMetadata } from "../_data/metadata";
 const document = legalDocuments.terms;
 export const metadata = {
   ...pageMetadata(`${document.title} – ${appData.name}`, document.description, "/terms"),
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 export default function FileSuiteLegalPage() {

@@ -44,7 +44,7 @@ export default function FileSuitePage() {
                 </article>
               ))}
             </div>
-            <p className="mt-7 max-w-3xl text-sm leading-6 text-[var(--muted)]">Tools described here reflect FileSuite’s planned product scope. Release behavior is being verified. Results vary by file, format, settings, and device.</p>
+            <p className="mt-7 max-w-3xl text-sm leading-6 text-[var(--muted)]">Results vary by file, format, settings, and device.</p>
           </Container>
         </section>
         <section id="how-it-works" className="scroll-mt-24 border-b border-[var(--line)] bg-white">
@@ -59,7 +59,7 @@ export default function FileSuitePage() {
         <section id="privacy" className="border-b border-[var(--line)] bg-[var(--paper-2)]">
           <Container className="grid gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-20">
             <div><ShieldCheck aria-hidden="true" className="mb-6 size-8 text-[var(--blue)]" strokeWidth={1.5} /><SectionLabel>Local processing</SectionLabel><h2 className="section-title mt-7">Your files stay yours.</h2></div>
-            <div className="self-center"><p className="body-large text-[var(--slate)]">FileSuite is designed to process supported photos and PDFs on your Android device. You choose where to save or share the result.</p><p className="mt-5 text-base leading-7 text-[var(--slate)]">A cloud-backed picker or a receiving app may use the network. Keep backups of important originals and check your outputs before relying on them.</p><a href={getAppPath("/privacy")} className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[var(--blue-deep)]">Read the privacy draft <ArrowUpRight aria-hidden="true" className="size-4" /></a></div>
+            <div className="self-center"><p className="body-large text-[var(--slate)]">FileSuite is designed to process supported photos and PDFs on your Android device. You choose where to save or share the result.</p><p className="mt-5 text-base leading-7 text-[var(--slate)]">A cloud-backed picker or a receiving app may use the network. Keep backups of important originals and check your outputs before relying on them.</p><a href={getAppPath("/privacy")} className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[var(--blue-deep)]">Read the Privacy Policy <ArrowUpRight aria-hidden="true" className="size-4" /></a></div>
           </Container>
         </section>
         <section id="faq" className="scroll-mt-24 border-b border-[var(--line)]">

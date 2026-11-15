@@ -71,7 +71,7 @@ export function AppLegalPage({ document }: { document: AppLegalDocument }) {
               </div>
               <div className="border-t border-[var(--ink)] pt-5 lg:mb-2">
                 <p className="font-mono text-[0.62rem] font-medium uppercase tracking-[0.16em] text-[var(--muted)]">
-                  Publication status
+                  Last updated
                 </p>
                 <p className="mt-3 text-lg font-medium tracking-[-0.02em] text-[var(--ink)]">
                   {document.effectiveDate}
