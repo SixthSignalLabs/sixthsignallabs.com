@@ -103,7 +103,7 @@ export function Footer() {
                 Social
               </h2>
               <ul className="mt-5 space-y-2">
-                {siteData.footer.socialLinks.map((link) => (
+                {siteData.footer.socialLinks.filter((link) => link.href).map((link) => (
                   <li key={link.label}>
                     <FooterDestination link={link} />
                   </li>

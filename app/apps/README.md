@@ -25,7 +25,23 @@ The example above creates these routes:
 - `/apps/example-app/privacy`
 - `/apps/example-app/terms`
 
-Canonical URLs use `NEXT_PUBLIC_SITE_URL`. The project currently falls back to
-`https://sixthsignallabs.com` when that environment variable is absent. Set
-`NEXT_PUBLIC_SITE_URL=https://sixthsignalglobal.com` in the deployment
-environment if that is the production domain.
+Canonical production URLs use `SITE_URL` in `lib/seo-config.ts`:
+`https://www.sixthsignallabs.com`. Preview environment variables cannot change
+production canonical or sitemap URLs.
+
+Before publishing a new app:
+
+- Register its real product data in `lib/app-catalog.ts` for the `/apps` directory.
+- Keep drafts in `lib/seo-exclusions.json` and retain their `noindex` metadata.
+  Remove an exclusion only when the corresponding publication gate is cleared.
+- The sitemap discovers filesystem page routes automatically and excludes private
+  folders and the explicit draft/redirect list. Dynamic routes require concrete
+  URL registration before publishing.
+- Give each public page unique metadata, a self-canonical, and page-specific
+  social metadata. `withPageSocial` prevents inherited social text from drifting.
+- Add real image dimensions to `lib/image-dimensions.json` when adding social art.
+- Link back to `/apps` in the app footer.
+- Run `npm run build && npm run seo:check` and inspect the audit results.
+
+WordLilt's product page is public; its legal pages retain the pending legal-review
+restriction. Oryfin remains a draft across all four routes. See `docs/seo-audit.md`.

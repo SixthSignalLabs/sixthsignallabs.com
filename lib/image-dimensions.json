@@ -1,0 +1,70 @@
+{
+  "/brand/sixth-signal-labs-logo.png": {
+    "width": 1280,
+    "height": 720
+  },
+  "/brand/sixth-signal-labs-lockup.png": {
+    "width": 1280,
+    "height": 420
+  },
+  "/brand/sixth-signal-mark.png": {
+    "width": 520,
+    "height": 520
+  },
+  "/apps/wordlilt/wordlilt-app-icon.png": {
+    "width": 480,
+    "height": 480
+  },
+  "/apps/hyperpulse/icon-1024.png": {
+    "width": 1024,
+    "height": 1024
+  },
+  "/apps/hyperpulse/bolt-mark-transparent.png": {
+    "width": 439,
+    "height": 512
+  },
+  "/apps/hyperpulse/hyperpulse-wordmark-transparent.png": {
+    "width": 1060,
+    "height": 172
+  },
+  "/apps/filesuite/01-home.png": {
+    "width": 1080,
+    "height": 1920
+  },
+  "/apps/filesuite/filesuite-wordmark.png": {
+    "width": 2172,
+    "height": 724
+  },
+  "/apps/filesuite/01-home-branded.png": {
+    "width": 1080,
+    "height": 1920
+  },
+  "/apps/filesuite/filesuite-app-icon.png": {
+    "width": 1254,
+    "height": 1254
+  },
+  "/apps/oryfin/oryfin-app-icon-1024.png": {
+    "width": 1024,
+    "height": 1024
+  },
+  "/apps/oryfin/oryfin-logo-on-dark.png": {
+    "width": 2400,
+    "height": 600
+  },
+  "/apps/arrowlilt/arrowlilt-splash.png": {
+    "width": 1024,
+    "height": 1024
+  },
+  "/apps/arrowlilt/arrowlilt-app-icon.png": {
+    "width": 512,
+    "height": 512
+  },
+  "/apps/arrowlilt/arrowlilt-wordmark.png": {
+    "width": 1100,
+    "height": 260
+  },
+  "/apps/geopixly/geopixly-app-icon.png": {
+    "width": 999,
+    "height": 1024
+  }
+}

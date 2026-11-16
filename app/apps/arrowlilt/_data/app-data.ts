@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/seo-config";
 // ArrowLilt — single source of truth for landing copy, links, preview data,
 // availability, and legal text. Mirror of the WordLilt data structure.
 
@@ -44,7 +45,7 @@ export const appData = {
   footerBlurb:
     "A calm, untimed arrow puzzle. Tap to clear the board and grow six botanical collections.",
   metadata: {
-    title: "ArrowLilt — Clear a path. Grow a little calm.",
+    title: "ArrowLilt — Calm Tap Away Puzzle for Android",
     description:
       "An untimed spatial puzzle where you tap arrows to clear the board and grow a botanical garden. No timer, no lives, no penalty. Play at your own pace.",
   },
@@ -81,7 +82,7 @@ export const appData = {
   supportHref: APP_SUPPORT_HREF,
   supportPrompt: `Questions? Contact ${APP_NAME}`,
   developerName: "Sixth Signal Labs",
-  developerUrl: "https://sixthsignallabs.com",
+  developerUrl: "https://www.sixthsignallabs.com",
   canonicalBasePath: "/apps/arrowlilt",
   privacyTrustLine:
     "No account required. Play offline. Progress is saved locally on your device.",
@@ -476,7 +477,7 @@ export const isPublishingReady =
   appData.availability.playStoreUrl !== null;
 
 export const deploymentSiteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sixthsignallabs.com";
+  SITE_URL;
 
 export function getAppUrl(suffix = "") {
   return new URL(`${appData.canonicalBasePath}${suffix}`, deploymentSiteUrl).toString();

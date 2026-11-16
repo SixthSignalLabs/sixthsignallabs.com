@@ -1,5 +1,8 @@
+import { ProductScreenshot } from "@/components/product-screenshot";
+import { AppSchema } from "@/components/app-schema";
+import { withPageSocial } from "@/lib/page-social";
 import type { Metadata } from "next";
-import { ArrowRight, ArrowUpRight, Leaf, Mail } from "lucide-react";
+import { ArrowUpRight, Leaf, Mail } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
@@ -11,23 +14,23 @@ import { AppHero } from "./_components/app-hero";
 import { AppStoreCta } from "./_components/app-store-cta";
 import { appData, getAppUrl } from "./_data/app-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocial({
   title: {
-    absolute: `${appData.name} — ${appData.tagline}`,
+    absolute: appData.metadata.title,
   },
-  description: appData.description,
+  description: appData.metadata.description,
   alternates: {
     canonical: getAppUrl(),
   },
   openGraph: {
     url: getAppUrl(),
-    title: `${appData.name} — ${appData.tagline}`,
-    description: appData.description,
+    title: appData.metadata.title,
+    description: appData.metadata.description,
     images: appData.appIconPath
       ? [{ url: appData.appIconPath, alt: `${appData.name} icon` }]
       : undefined,
   },
-};
+}, "/apps/arrowlilt/arrowlilt-app-icon.png");
 
 function SlideIllustration() {
   return (
@@ -106,6 +109,7 @@ export default function ArrowLiltLandingPage() {
     <div id="top" className="min-h-screen bg-[var(--paper)]">
       <AppHeader />
       <main id="main-content">
+        <AppSchema path="/apps/arrowlilt" />
         {/* ── 1. Hero / Overview ─────────────────────────────────────────── */}
         <AppHero />
 
@@ -317,6 +321,7 @@ export default function ArrowLiltLandingPage() {
             </Reveal>
           </Container>
         </section>
+        <ProductScreenshot path="/apps/arrowlilt" />
       </main>
       <AppFooter />
     </div>

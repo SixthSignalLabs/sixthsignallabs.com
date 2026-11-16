@@ -1,9 +1,10 @@
+import { withPageSocial } from "@/lib/page-social";
 import type { Metadata } from "next";
 
 import { LegalPage } from "@/components/legal/legal-page";
 import { termsOfService } from "@/lib/legal-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocial({
   title: "Terms of Service | Sixth Signal Labs",
   description:
     "Terms governing access to and use of the Sixth Signal Labs website, services, digital products, and related materials.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "Terms governing access to and use of the Sixth Signal Labs website, services, digital products, and related materials.",
   },
-};
+});
 
 export default function TermsPage() {
   return <LegalPage document={termsOfService} />;

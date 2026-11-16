@@ -23,6 +23,19 @@ The standard production build uses Next.js’s supported webpack path for compat
 
 - Homepage content and placeholder state live in `lib/site-data.ts`.
 - Brand assets live in `public/brand/`; the lockup and favicon derivatives preserve the supplied logo artwork.
-- Set `NEXT_PUBLIC_SITE_URL` if the production origin differs from `https://sixthsignallabs.com`.
-- Replace the three project slots only with verified case studies.
-- Confirm the contact email, social links, legal destinations, and testimonial before launch. They are deliberately labelled or modeled as placeholders today.
+- Canonical production origin: `https://www.sixthsignallabs.com`, defined in `lib/seo-config.ts`.
+- Portfolio entries describe real apps; add only verified product content.
+- Unconfirmed contact and social links and placeholder testimonials are not displayed. Legal text is preserved; obtain review before changing it.
+
+## SEO verification
+
+```bash
+npm run build
+npm run seo:check
+# Check deployed responses after publishing separately:
+npm run seo:check:live
+```
+
+The verifier requires Python 3 and curl, starts a production Next server on
+127.0.0.1:4173 for local checks, and writes results to `docs/seo-evidence/`.
+See `docs/seo-audit.md` for findings, intentional draft exclusions, and rollout checks.

@@ -12,6 +12,7 @@ const legalLinks = [
 export function AppFooter() {
   return (
     <footer className="relative overflow-hidden bg-[var(--surface-dark)] text-white">
+      <div className="relative mx-auto max-w-7xl px-6 pt-8"><a href="/apps" className="inline-flex min-h-11 items-center text-sm underline underline-offset-4">Explore all apps</a></div>
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--blue-bright)]/70 to-transparent"

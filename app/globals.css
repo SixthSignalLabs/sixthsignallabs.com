@@ -254,3 +254,11 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Entrance animations must not conceal the prerendered content without JS. */
+@media (scripting: none) {
+  main [style*="opacity"], main [style*="transform"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

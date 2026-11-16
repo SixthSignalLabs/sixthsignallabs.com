@@ -1,9 +1,10 @@
+import { withPageSocial } from "@/lib/page-social";
 import type { Metadata } from "next";
 
 import { LegalPage } from "@/components/legal/legal-page";
 import { privacyPolicy } from "@/lib/legal-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocial({
   title: "Privacy Policy | Sixth Signal Labs",
   description:
     "How Sixth Signal Labs collects, uses, discloses, and protects information across its website, services, and business operations.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "How Sixth Signal Labs collects, uses, discloses, and protects information across its website, services, and business operations.",
   },
-};
+});
 
 export default function PrivacyPage() {
   return <LegalPage document={privacyPolicy} />;

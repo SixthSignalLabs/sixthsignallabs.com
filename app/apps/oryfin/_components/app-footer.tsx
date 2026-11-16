@@ -16,6 +16,7 @@ const footerLinks = [
 export function AppFooter() {
   return (
     <footer className="oryfin-screen-only relative overflow-hidden bg-[var(--oryfin-navy)] text-white">
+      <div className="relative mx-auto max-w-7xl px-6 pt-8"><a href="/apps" className="inline-flex min-h-11 items-center text-sm underline underline-offset-4">Explore all apps</a></div>
       <div aria-hidden="true" className="oryfin-arc-line absolute inset-x-0 top-0 h-1" />
       <Container className="relative py-12 sm:py-16">
         <div className="flex flex-col gap-10 border-b border-white/10 pb-10 sm:flex-row sm:items-end sm:justify-between">

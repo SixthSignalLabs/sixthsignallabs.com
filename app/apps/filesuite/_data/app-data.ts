@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/seo-config";
 import type { AppLegalDocument } from "../../_template/_data/app-data";
 
 export type { AppLegalBlock, AppLegalDocument } from "../../_template/_data/app-data";
@@ -34,7 +35,7 @@ export const appData = {
   },
   supportEmail: "filesuite@sixthsignallabs.com",
   developerName: "Sixth Signal Labs",
-  developerUrl: "https://sixthsignallabs.com",
+  developerUrl: "https://www.sixthsignallabs.com",
   canonicalBasePath: "/apps/filesuite",
   features: [
     { number: "01", title: "Compress Photos", description: "Reduce image sizes with quality settings, or aim for a target KB or MB size where achievable. Process a batch of photos together." },
@@ -54,7 +55,7 @@ export const appData = {
   ],
 } as const;
 
-export const deploymentSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sixthsignallabs.com";
+export const deploymentSiteUrl = SITE_URL;
 export function getAppPath(suffix = "") { return `${appData.canonicalBasePath}${suffix}`; }
 export function getAppUrl(suffix = "") { return new URL(getAppPath(suffix), deploymentSiteUrl).toString(); }
 

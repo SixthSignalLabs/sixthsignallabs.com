@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/seo-config";
 // GeoPixly product content — single source for landing copy, links, and draft legal text.
 
 const APP_NAME = "GeoPixly";
@@ -61,7 +62,7 @@ export const appData = {
   },
   supportEmail: APP_SUPPORT_EMAIL,
   developerName: "Sixth Signal Labs",
-  developerUrl: "https://sixthsignallabs.com",
+  developerUrl: "https://www.sixthsignallabs.com",
   canonicalBasePath: "/apps/geopixly",
   featuresIntro: {
     label: "Product features",
@@ -420,7 +421,7 @@ export const appData = {
 } as const;
 
 export const deploymentSiteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sixthsignallabs.com";
+  SITE_URL;
 
 export function getAppUrl(suffix = "") {
   return new URL(`${appData.canonicalBasePath}${suffix}`, deploymentSiteUrl).toString();

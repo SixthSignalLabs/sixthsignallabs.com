@@ -1,13 +1,13 @@
 "use client";
 
-import { ArrowUpRight, Mail, Radio } from "lucide-react";
+import { Radio } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
 import { siteData } from "@/lib/site-data";
 
 export function Contact() {
   const { contactSection } = siteData;
-  const mailto = `mailto:${contactSection.email.value}?subject=Project%20inquiry%20for%20Sixth%20Signal%20Labs`;
+
 
   return (
     <section id="contact" aria-labelledby="contact-heading" className="relative overflow-hidden bg-[#dbeaf1] py-24 md:py-36">
@@ -29,27 +29,8 @@ export function Contact() {
           </h2>
           <p className="body-large mx-auto mt-8 max-w-2xl text-slate">{contactSection.body}</p>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href={mailto}
-              className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-semibold text-white shadow-float transition-transform duration-300 hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-blue-bright focus-visible:ring-offset-4"
-            >
-              {contactSection.primaryAction.label}
-              <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
-            </a>
-            <a
-              href={mailto}
-              aria-label={`${contactSection.email.value}, placeholder email address`}
-              className="inline-flex min-h-14 items-center gap-3 rounded-full border border-ink/15 bg-white/60 px-6 py-4 text-sm font-medium text-ink backdrop-blur transition-colors hover:bg-white"
-            >
-              <Mail className="size-4 text-blue" aria-hidden="true" />
-              {contactSection.email.value}
-            </a>
-          </div>
-
-          <p className="mono-label mx-auto mt-5 max-w-xl leading-relaxed text-muted">
-            Placeholder contact address — confirm or replace before launch.
-          </p>
+          <p className="mt-10 text-slate">For help with an app, visit its product page for support details.</p>
+          <a href="/apps" className="mt-6 inline-flex min-h-14 items-center rounded-full bg-ink px-7 py-4 text-sm font-semibold text-white">Explore our apps</a>
         </div>
 
         <div className="mt-20 grid grid-cols-2 border-l border-t border-ink/12 text-left md:mt-28 md:grid-cols-4">

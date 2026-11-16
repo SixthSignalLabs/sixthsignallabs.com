@@ -8,7 +8,9 @@
     "build:turbopack": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "seo:check": "python3 scripts/seo-check.py --start",
+    "seo:check:live": "python3 scripts/seo-check.py --base https://www.sixthsignallabs.com --output docs/seo-evidence/production-check.json"
   },
   "dependencies": {
     "geist": "1.7.2",

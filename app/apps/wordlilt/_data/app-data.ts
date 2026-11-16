@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/seo-config";
 // WordLilt product content — single source for landing copy, links, preview
 // puzzle data, availability, and legal text.
 //
@@ -115,7 +116,7 @@ export const appData = {
   supportHref: APP_SUPPORT_HREF,
   supportPrompt: `Questions? Contact ${APP_NAME}`,
   developerName: "Sixth Signal Labs",
-  developerUrl: "https://sixthsignallabs.com",
+  developerUrl: "https://www.sixthsignallabs.com",
   canonicalBasePath: "/apps/wordlilt",
   featuresIntro: {
     label: "Features",
@@ -497,7 +498,7 @@ export const isPublishingReady =
   appData.availability.playStoreUrl !== null && appData.publishing.legalReviewed;
 
 export const deploymentSiteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sixthsignallabs.com";
+  SITE_URL;
 
 export function getAppUrl(suffix = "") {
   return new URL(`${appData.canonicalBasePath}${suffix}`, deploymentSiteUrl).toString();

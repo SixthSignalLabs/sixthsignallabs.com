@@ -182,6 +182,7 @@ export type SiteData = {
 
 export const navigationItems = [
   { label: "Work", href: "/#work" },
+  { label: "Apps", href: "/apps" },
   { label: "Services", href: "/#services" },
   { label: "Process", href: "/#process" },
   { label: "About", href: "/#about" },
@@ -433,7 +434,7 @@ export const siteData = {
   },
   navigation: {
     items: navigationItems,
-    cta: { label: "Start a project", href: "#contact" },
+    cta: { label: "Start a project", href: "/#contact" },
   },
   hero: {
     eyebrow: "Independent product engineering studio",

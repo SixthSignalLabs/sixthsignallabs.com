@@ -11,6 +11,7 @@ import {
 export function AppFooter() {
   return (
     <footer className="hp-footer">
+      <div className="relative mx-auto max-w-7xl px-6 pt-8"><a href="/apps" className="inline-flex min-h-11 items-center text-sm underline underline-offset-4">Explore all apps</a></div>
       <Container>
         <div className="hp-footer-inner">
           <div>

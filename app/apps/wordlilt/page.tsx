@@ -1,3 +1,6 @@
+import { ProductScreenshot } from "@/components/product-screenshot";
+import { AppSchema } from "@/components/app-schema";
+import { withPageSocial } from "@/lib/page-social";
 import type { Metadata } from "next";
 import { ArrowUpRight, Mail } from "lucide-react";
 
@@ -12,7 +15,9 @@ import { AppStoreCta } from "./_components/app-store-cta";
 import { WordGrid, type GridBand } from "./_components/word-grid";
 import { appData, findPuzzleWord, getAppUrl, getWordCells } from "./_data/app-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocial({
+  // Product information is public; legal-review gating stays on legal routes.
+  robots: { index: true, follow: true },
   title: {
     absolute: appData.metadata.title,
   },
@@ -28,7 +33,7 @@ export const metadata: Metadata = {
       ? [{ url: appData.appIconPath, alt: `${appData.name} icon` }]
       : undefined,
   },
-};
+}, "/apps/wordlilt/wordlilt-app-icon.png");
 
 function TracingIllustration() {
   const { illustration } = appData.howToPlay;
@@ -71,6 +76,7 @@ export default function WordLiltLandingPage() {
     <div id="top" className="min-h-screen bg-[var(--paper)]">
       <AppHeader />
       <main id="main-content">
+        <AppSchema path="/apps/wordlilt" />
         <AppHero />
 
         <section id="features" className="scroll-mt-24 border-b border-[var(--line)] bg-[var(--paper)]">
@@ -217,6 +223,7 @@ export default function WordLiltLandingPage() {
             </Reveal>
           </Container>
         </section>
+        <ProductScreenshot path="/apps/wordlilt" />
       </main>
       <AppFooter />
     </div>

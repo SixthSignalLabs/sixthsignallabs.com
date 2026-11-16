@@ -1,0 +1,979 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "status": "VERIFIED",
+  "routes": [
+    {
+      "path": "/",
+      "source": "app/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com"
+      ],
+      "robots": "(default index, follow)",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Sixth Signal Labs \u2014 Mobile & Web Product Development",
+      "description": [
+        "Sixth Signal Labs designs and engineers high-quality mobile apps, web applications, and digital products for startups and ambitious companies."
+      ],
+      "h1": 1,
+      "htmlBytes": 133477,
+      "textCharacters": 5095,
+      "schema": [
+        "Organization",
+        "WebSite"
+      ],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps",
+      "source": "app/apps/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps"
+      ],
+      "robots": "(default index, follow)",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Apps by Sixth Signal Labs \u2014 Games & Everyday Tools",
+      "description": [
+        "Explore WordLilt, ArrowLilt, GeoPixly, FileSuite, and HyperPulse: puzzle games, location-stamped photos, file tools, and workout tracking by Sixth Signal Labs."
+      ],
+      "h1": 1,
+      "htmlBytes": 51686,
+      "textCharacters": 1274,
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/arrowlilt",
+      "source": "app/apps/arrowlilt/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/arrowlilt"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "ArrowLilt \u2014 Calm Tap Away Puzzle for Android",
+      "description": [
+        "An untimed spatial puzzle where you tap arrows to clear the board and grow a botanical garden. No timer, no lives, no penalty. Play at your own pace."
+      ],
+      "h1": 1,
+      "htmlBytes": 104215,
+      "textCharacters": 3506,
+      "schema": [
+        "SoftwareApplication"
+      ],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/arrowlilt/privacy",
+      "source": "app/apps/arrowlilt/privacy/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/arrowlilt/privacy"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Privacy Policy | ArrowLilt",
+      "description": [
+        "How ArrowLilt handles information and protects player privacy."
+      ],
+      "h1": 1,
+      "htmlBytes": 72453,
+      "textCharacters": 6297,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/arrowlilt/terms",
+      "source": "app/apps/arrowlilt/terms/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/arrowlilt/terms"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Terms of Service | ArrowLilt",
+      "description": [
+        "The terms that govern access to and use of ArrowLilt."
+      ],
+      "h1": 1,
+      "htmlBytes": 62723,
+      "textCharacters": 5738,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/filesuite",
+      "source": "app/apps/filesuite/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/filesuite"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "FileSuite \u2013 PDF & Photo Tools for Android",
+      "description": [
+        "Compress photos, resize images, convert JPG, PNG and WebP, create PDFs, and optimize supported files with FileSuite for Android."
+      ],
+      "h1": 1,
+      "htmlBytes": 60140,
+      "textCharacters": 3723,
+      "schema": [
+        "SoftwareApplication"
+      ],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/filesuite/privacy",
+      "source": "app/apps/filesuite/privacy/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/filesuite/privacy"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Privacy Policy \u2013 FileSuite",
+      "description": [
+        "How FileSuite handles selected photos and PDFs, local processing, storage, sharing, and your privacy choices."
+      ],
+      "h1": 1,
+      "htmlBytes": 67804,
+      "textCharacters": 5765,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/filesuite/terms",
+      "source": "app/apps/filesuite/terms/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/filesuite/terms"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Terms & Conditions \u2013 FileSuite",
+      "description": [
+        "The terms governing FileSuite, including permitted use, file-processing limitations, document verification, ownership, and liability."
+      ],
+      "h1": 1,
+      "htmlBytes": 69872,
+      "textCharacters": 5839,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/geopixly",
+      "source": "app/apps/geopixly/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/geopixly"
+      ],
+      "robots": "(default index, follow)",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "GeoPixly \u2014 Fast, verifiable location stamping.",
+      "description": [
+        "Camera app that stamps precise GPS, date/time, and field telemetry as a visual overlay onto photos \u2014 on-device. Photos stay on the phone unless the user shares them."
+      ],
+      "h1": 1,
+      "htmlBytes": 90356,
+      "textCharacters": 3065,
+      "schema": [
+        "SoftwareApplication"
+      ],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/geopixly/privacy",
+      "source": "app/apps/geopixly/privacy/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/geopixly/privacy"
+      ],
+      "robots": "(default index, follow)",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Privacy Policy | GeoPixly",
+      "description": [
+        "How GeoPixly handles photos, location, and related information on your device."
+      ],
+      "h1": 1,
+      "htmlBytes": 69229,
+      "textCharacters": 6025,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/geopixly/terms",
+      "source": "app/apps/geopixly/terms/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/geopixly/terms"
+      ],
+      "robots": "(default index, follow)",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Terms of Service | GeoPixly",
+      "description": [
+        "The terms that govern access to and use of GeoPixly."
+      ],
+      "h1": 1,
+      "htmlBytes": 62765,
+      "textCharacters": 5894,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/hyperpulse",
+      "source": "app/apps/hyperpulse/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/hyperpulse"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Plan every set. See your progress. | HyperPulse",
+      "description": [
+        "An offline-first strength-training tracker for planning routines, logging workouts, managing rest periods, and understanding progress from your own training records."
+      ],
+      "h1": 1,
+      "htmlBytes": 39919,
+      "textCharacters": 4274,
+      "schema": [
+        "SoftwareApplication"
+      ],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/hyperpulse/privacy",
+      "source": "app/apps/hyperpulse/privacy/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/hyperpulse/privacy"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Privacy Policy | HyperPulse",
+      "description": [
+        "How HyperPulse handles local training records, wellness check-ins, exports, and website visits."
+      ],
+      "h1": 1,
+      "htmlBytes": 47873,
+      "textCharacters": 9563,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/hyperpulse/support",
+      "source": "app/apps/hyperpulse/support/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/hyperpulse/support"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Support | HyperPulse",
+      "description": [
+        "Help with HyperPulse routines, workouts, progress, backups, and local data."
+      ],
+      "h1": 1,
+      "htmlBytes": 48300,
+      "textCharacters": 7669,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/hyperpulse/terms",
+      "source": "app/apps/hyperpulse/terms/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/hyperpulse/terms"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Terms of Use | HyperPulse",
+      "description": [
+        "Terms for HyperPulse\u2019s manual workout planning and local training records."
+      ],
+      "h1": 1,
+      "htmlBytes": 45342,
+      "textCharacters": 8311,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/oryfin",
+      "source": "app/apps/oryfin/page.tsx",
+      "status": 200,
+      "indexable": false,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/oryfin"
+      ],
+      "robots": "noindex, follow",
+      "xRobots": "(absent)",
+      "sitemap": false,
+      "title": "Oryfin \u2014 Your money, finally clear.",
+      "description": [
+        "A local-first personal money tracker for understanding spending, planning budgets, following savings goals, and estimating what may be safe to spend."
+      ],
+      "h1": 1,
+      "htmlBytes": 58315,
+      "textCharacters": 2842,
+      "schema": [],
+      "internallyReachable": false
+    },
+    {
+      "path": "/apps/oryfin/privacy",
+      "source": "app/apps/oryfin/privacy/page.tsx",
+      "status": 200,
+      "indexable": false,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/oryfin/privacy"
+      ],
+      "robots": "noindex, follow",
+      "xRobots": "(absent)",
+      "sitemap": false,
+      "title": "Privacy Policy | Oryfin",
+      "description": [
+        "How Oryfin handles local financial records and service-related information."
+      ],
+      "h1": 1,
+      "htmlBytes": 107691,
+      "textCharacters": 9239,
+      "schema": [],
+      "internallyReachable": false
+    },
+    {
+      "path": "/apps/oryfin/support",
+      "source": "app/apps/oryfin/support/page.tsx",
+      "status": 200,
+      "indexable": false,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/oryfin/support"
+      ],
+      "robots": "noindex, follow",
+      "xRobots": "(absent)",
+      "sitemap": false,
+      "title": "Support | Oryfin",
+      "description": [
+        "Help with Oryfin transactions, budgets, goals, subscriptions, local data, and account configuration."
+      ],
+      "h1": 1,
+      "htmlBytes": 75230,
+      "textCharacters": 5924,
+      "schema": [],
+      "internallyReachable": false
+    },
+    {
+      "path": "/apps/oryfin/terms",
+      "source": "app/apps/oryfin/terms/page.tsx",
+      "status": 200,
+      "indexable": false,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/oryfin/terms"
+      ],
+      "robots": "noindex, follow",
+      "xRobots": "(absent)",
+      "sitemap": false,
+      "title": "Terms of Use | Oryfin",
+      "description": [
+        "Supplemental terms governing use of the Oryfin application and website."
+      ],
+      "h1": 1,
+      "htmlBytes": 112143,
+      "textCharacters": 9605,
+      "schema": [],
+      "internallyReachable": false
+    },
+    {
+      "path": "/apps/wordlilt",
+      "source": "app/apps/wordlilt/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/wordlilt"
+      ],
+      "robots": "index, follow",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "WordLilt \u2014 Word Search Puzzle | Sixth Signal Labs",
+      "description": [
+        "Discover WordLilt, a colorful word-search puzzle game. Swipe through letter grids, uncover hidden words, and enjoy a satisfying puzzle break."
+      ],
+      "h1": 1,
+      "htmlBytes": 181501,
+      "textCharacters": 2155,
+      "schema": [
+        "SoftwareApplication"
+      ],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/wordlilt/privacy",
+      "source": "app/apps/wordlilt/privacy/page.tsx",
+      "status": 200,
+      "indexable": false,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/wordlilt/privacy"
+      ],
+      "robots": "noindex, follow",
+      "xRobots": "(absent)",
+      "sitemap": false,
+      "title": "Privacy Policy | WordLilt",
+      "description": [
+        "How WordLilt handles information and protects player privacy."
+      ],
+      "h1": 1,
+      "htmlBytes": 63171,
+      "textCharacters": 4816,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/apps/wordlilt/terms",
+      "source": "app/apps/wordlilt/terms/page.tsx",
+      "status": 200,
+      "indexable": false,
+      "canonical": [
+        "https://www.sixthsignallabs.com/apps/wordlilt/terms"
+      ],
+      "robots": "noindex, follow",
+      "xRobots": "(absent)",
+      "sitemap": false,
+      "title": "Terms of Service | WordLilt",
+      "description": [
+        "The terms that govern access to and use of WordLilt."
+      ],
+      "h1": 1,
+      "htmlBytes": 59264,
+      "textCharacters": 4892,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/privacy",
+      "source": "app/privacy/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/privacy"
+      ],
+      "robots": "(default index, follow)",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Privacy Policy | Sixth Signal Labs",
+      "description": [
+        "How Sixth Signal Labs collects, uses, discloses, and protects information across its website, services, and business operations."
+      ],
+      "h1": 1,
+      "htmlBytes": 122011,
+      "textCharacters": 6765,
+      "schema": [],
+      "internallyReachable": true
+    },
+    {
+      "path": "/privcy",
+      "source": "app/privcy/page.tsx",
+      "status": 308,
+      "indexable": false,
+      "redirect": "/privacy",
+      "internallyReachable": false
+    },
+    {
+      "path": "/terms",
+      "source": "app/terms/page.tsx",
+      "status": 200,
+      "indexable": true,
+      "canonical": [
+        "https://www.sixthsignallabs.com/terms"
+      ],
+      "robots": "(default index, follow)",
+      "xRobots": "(absent)",
+      "sitemap": true,
+      "title": "Terms of Service | Sixth Signal Labs",
+      "description": [
+        "Terms governing access to and use of the Sixth Signal Labs website, services, digital products, and related materials."
+      ],
+      "h1": 1,
+      "htmlBytes": 116680,
+      "textCharacters": 8009,
+      "schema": [],
+      "internallyReachable": true
+    }
+  ],
+  "eligibleCount": 18,
+  "resourceMeasurements": [
+    {
+      "path": "/_next/image?url=%2Fapps%2Farrowlilt%2Farrowlilt-app-icon.png&w=256&q=75",
+      "bytes": 1111,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Farrowlilt%2Farrowlilt-app-icon.png&w=3840&q=75",
+      "bytes": 1805,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Farrowlilt%2Fwork-screenshot.webp&w=3840&q=75",
+      "bytes": 31618,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Ffilesuite%2F01-home-branded.png&w=3840&q=75",
+      "bytes": 42866,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Ffilesuite%2Ffilesuite-app-icon.png&w=3840&q=75",
+      "bytes": 209009,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Ffilesuite%2Ffilesuite-wordmark.png&w=3840&q=75",
+      "bytes": 120777,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fgeopixly%2Fgeopixly-app-icon.png&w=3840&q=75",
+      "bytes": 37540,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fgeopixly%2Fgeopixly-app-icon.png&w=96&q=75",
+      "bytes": 1521,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fgeopixly%2Fwork-screenshot.webp&w=3840&q=75",
+      "bytes": 87460,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fhyperpulse%2Fbolt-mark-transparent.png&w=3840&q=75",
+      "bytes": 5516,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fhyperpulse%2Fhyperpulse-wordmark-transparent.png&w=3840&q=75",
+      "bytes": 4948,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fhyperpulse%2Ficon-1024.png&w=3840&q=75",
+      "bytes": 18460,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Foryfin%2Foryfin-app-icon-1024.png&w=3840&q=75",
+      "bytes": 28833,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Foryfin%2Foryfin-logo-on-dark.png&w=3840&q=75",
+      "bytes": 18598,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fwordlilt%2Fwordlilt-app-icon.png&w=256&q=75",
+      "bytes": 12166,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fwordlilt%2Fwordlilt-app-icon.png&w=3840&q=75",
+      "bytes": 23229,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fapps%2Fwordlilt%2Fwork-screenshot.webp&w=3840&q=75",
+      "bytes": 48860,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/image?url=%2Fbrand%2Fsixth-signal-labs-lockup.png&w=3840&q=75",
+      "bytes": 50785,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "path": "/_next/static/chunks/3794-379fc0ccc8776933.js",
+      "bytes": 239305,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/4143-8b937e544b8f2707.js",
+      "bytes": 18389,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/4853-c9f71b98effe66eb.js",
+      "bytes": 7051,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-93bf506b236d6248.js",
+      "bytes": 201055,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/5861-83ed23caf3728bfd.js",
+      "bytes": 12321,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/7621-d9af7d74d721ca31.js",
+      "bytes": 127622,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/8437-6393f03de2ac1a29.js",
+      "bytes": 15002,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/8500-335e4da2b43dccf8.js",
+      "bytes": 7883,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/arrowlilt/page-a1d8742dadd2411a.js",
+      "bytes": 19347,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/arrowlilt/privacy/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/arrowlilt/terms/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/filesuite/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/filesuite/privacy/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/filesuite/terms/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/geopixly/page-0bff9350f25469e5.js",
+      "bytes": 18748,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/geopixly/privacy/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/geopixly/terms/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/hyperpulse/page-938fbbbc0403da56.js",
+      "bytes": 1322,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/hyperpulse/privacy/page-93019a28e3069dd0.js",
+      "bytes": 958,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/hyperpulse/support/page-93019a28e3069dd0.js",
+      "bytes": 958,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/hyperpulse/terms/page-93019a28e3069dd0.js",
+      "bytes": 958,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/oryfin/page-8c04a85dbd560d82.js",
+      "bytes": 2687,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/oryfin/privacy/page-7a809e813c7d7e11.js",
+      "bytes": 2036,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/oryfin/support/page-7a809e813c7d7e11.js",
+      "bytes": 2036,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/oryfin/terms/page-7a809e813c7d7e11.js",
+      "bytes": 2036,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/page-5890f270b6f1b3b6.js",
+      "bytes": 291,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/wordlilt/page-dd4524248838577f.js",
+      "bytes": 16166,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/wordlilt/privacy/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/apps/wordlilt/terms/page-6e8909c14ec7bbca.js",
+      "bytes": 1303,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/global-error-b893ac5d4326aac3.js",
+      "bytes": 7291,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-28a016866badb11a.js",
+      "bytes": 1669,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/page-3a3cb3073e0840ca.js",
+      "bytes": 36680,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/privacy/page-938fbbbc0403da56.js",
+      "bytes": 1322,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/app/terms/page-938fbbbc0403da56.js",
+      "bytes": 1322,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/main-app-2e859ce3ab37a542.js",
+      "bytes": 470,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "bytes": 112594,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/chunks/webpack-6bde9a8a69f2f25f.js",
+      "bytes": 3368,
+      "contentType": "application/javascript; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/css/28dece443ef19390.css",
+      "bytes": 658,
+      "contentType": "text/css; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/css/81365a055d0bf70a.css",
+      "bytes": 7517,
+      "contentType": "text/css; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/css/9a8643fc8348ce66.css",
+      "bytes": 1251,
+      "contentType": "text/css; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_next/static/css/e2a609783290b8ba.css",
+      "bytes": 95923,
+      "contentType": "text/css; charset=UTF-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/apps/arrowlilt/arrowlilt-app-icon.png",
+      "bytes": 8177,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/arrowlilt/arrowlilt-wordmark-outlined.svg",
+      "bytes": 3519,
+      "contentType": "image/svg+xml",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/arrowlilt/work-screenshot.webp",
+      "bytes": 20884,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/filesuite/filesuite-app-icon.png",
+      "bytes": 1089630,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/filesuite/filesuite-wordmark.png",
+      "bytes": 662286,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/geopixly/geopixly-app-icon.png",
+      "bytes": 78632,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/geopixly/work-screenshot.webp",
+      "bytes": 105618,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/hyperpulse/icon-1024.png",
+      "bytes": 125999,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/oryfin/oryfin-app-icon-1024.png",
+      "bytes": 142424,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/oryfin/oryfin-logo-primary.svg",
+      "bytes": 3181,
+      "contentType": "image/svg+xml",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/wordlilt/wordlilt-app-icon.png",
+      "bytes": 117264,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/apps/wordlilt/work-screenshot.webp",
+      "bytes": 39704,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/brand/sixth-signal-labs-logo.png",
+      "bytes": 212929,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    },
+    {
+      "path": "/brand/sixth-signal-mark.png",
+      "bytes": 132009,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=0"
+    }
+  ],
+  "resourcesChecked": 73,
+  "errors": [],
+  "limitations": [
+    "Browser layout, hydration, Lighthouse, field LCP/INP/CLS, Google-selected canonicals and indexing: NOT VERIFIED by this HTTP-only check."
+  ]
+}

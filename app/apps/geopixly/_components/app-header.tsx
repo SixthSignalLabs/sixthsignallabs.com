@@ -64,7 +64,7 @@ export function AppHeader({ activeLegalPage }: AppHeaderProps) {
             Support
           </a>
           <a
-            href={appData.primaryAction.href}
+            href={activeLegalPage && appData.primaryAction.href.startsWith("#") ? `${homePath}${appData.primaryAction.href}` : appData.primaryAction.href}
             className="group inline-flex min-h-10 shrink-0 items-center gap-2 rounded-full border border-[var(--ink)] bg-[var(--ink)] px-3.5 font-mono text-[0.62rem] font-medium uppercase tracking-[0.12em] text-white transition-colors hover:border-[var(--blue)] hover:bg-[var(--blue)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue-bright)] focus-visible:ring-offset-2 sm:px-4"
           >
             {appData.primaryAction.label}

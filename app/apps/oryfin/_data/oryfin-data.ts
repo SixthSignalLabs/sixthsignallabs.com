@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/seo-config";
 // Complete these values before publishing Oryfin's App Store website URLs.
 // Missing required values keep every Oryfin route out of search indexes and
 // produce a visible review notice instead of publishing placeholder text.
@@ -8,7 +9,7 @@ export const oryfinPublishing = {
   effectiveDate: null as string | null,
   governingJurisdiction: null as string | null,
   appStoreUrl: null as string | null,
-  canonicalOrigin: process.env.NEXT_PUBLIC_SITE_URL?.trim() || null,
+  canonicalOrigin: SITE_URL,
   supabaseEmailSignInShips: null as boolean | null,
   appStoreAgeRating: null as string | null,
   telephone: null as string | null,
@@ -27,7 +28,7 @@ export const oryfin = {
   logoPath: "/apps/oryfin/oryfin-logo-primary.svg",
   darkLogoPath: "/apps/oryfin/oryfin-logo-on-dark.png",
   developerName: "Sixth Signal Labs",
-  developerUrl: "https://sixthsignallabs.com",
+  developerUrl: "https://www.sixthsignallabs.com",
 } as const;
 
 export const externalLinks = {
@@ -165,7 +166,7 @@ export const launchBlockers = requiredPublishingValues
 export const isPublishingReady = launchBlockers.length === 0;
 
 export const metadataOrigin =
-  oryfinPublishing.canonicalOrigin ?? "https://sixthsignallabs.com";
+  SITE_URL;
 
 export function getOryfinPath(suffix = "") {
   return `${oryfin.basePath}${suffix}`;

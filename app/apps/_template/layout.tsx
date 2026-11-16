@@ -13,6 +13,8 @@ const socialImages = appData.appIconPath
   : undefined;
 
 export const metadata: Metadata = {
+  // Copies remain drafts until their content and publication policy are reviewed.
+  robots: { index: false, follow: true },
   metadataBase: new URL(deploymentSiteUrl),
   applicationName: appData.name,
   title: {

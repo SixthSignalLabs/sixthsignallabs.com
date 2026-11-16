@@ -1,3 +1,4 @@
+import { withPageSocial } from "@/lib/page-social";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, CircleAlert, Mail } from "lucide-react";
@@ -15,7 +16,7 @@ import {
   supportTopics,
 } from "../_data/oryfin-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocial({
   title: { absolute: `Support | ${oryfin.name}` },
   description: "Help with Oryfin transactions, budgets, goals, subscriptions, local data, and account configuration.",
   alternates: { canonical: getOryfinUrl("/support") },
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     title: `Support | ${oryfin.name}`,
     description: "Help with Oryfin features, purchases, and local data.",
   },
-};
+}, "/apps/oryfin/oryfin-app-icon-1024.png");
 
 export default function OryfinSupportPage() {
   const supportMailto = getSupportMailto();

@@ -1,3 +1,4 @@
+import { AppSchema } from "@/components/app-schema";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -9,6 +10,7 @@ export const metadata = pageMetadata(appData.tagline, appData.description);
 export default function AppLandingPage() {
   return (
     <main id="main-content">
+      <AppSchema path="/apps/hyperpulse" />
       <AppHero />
       <section id="features" className="hp-section">
         <Container>

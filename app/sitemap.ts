@@ -1,29 +1,8 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sixthsignallabs.com";
+import { SITE_URL } from "@/lib/seo-config";
+import { publicRoutes } from "@/lib/public-routes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = [
-    { path: "", changeFrequency: "monthly" as const, priority: 1 },
-    { path: "/privacy", changeFrequency: "yearly" as const, priority: 0.3 },
-    { path: "/terms", changeFrequency: "yearly" as const, priority: 0.3 },
-    { path: "/apps/filesuite", changeFrequency: "monthly" as const, priority: 0.7 },
-    { path: "/apps/filesuite/privacy", changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/apps/filesuite/terms", changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/apps/hyperpulse", changeFrequency: "monthly" as const, priority: 0.7 },
-    { path: "/apps/hyperpulse/support", changeFrequency: "monthly" as const, priority: 0.5 },
-    { path: "/apps/hyperpulse/privacy", changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/apps/hyperpulse/terms", changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/apps/oryfin", changeFrequency: "monthly" as const, priority: 0.7 },
-    { path: "/apps/oryfin/support", changeFrequency: "monthly" as const, priority: 0.5 },
-    { path: "/apps/oryfin/privacy", changeFrequency: "yearly" as const, priority: 0.4 },
-    { path: "/apps/oryfin/terms", changeFrequency: "yearly" as const, priority: 0.4 },
-  ];
-
-  return pages.map((page) => ({
-    url: `${siteUrl}${page.path}`,
-    lastModified: new Date(),
-    changeFrequency: page.changeFrequency,
-    priority: page.priority,
-  }));
+  // Omit lastmod until genuine page modification dates are maintained.
+  return publicRoutes().map((path) => ({ url: new URL(path, SITE_URL).href }));
 }

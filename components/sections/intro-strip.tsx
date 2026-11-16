@@ -19,22 +19,6 @@ export function IntroStrip() {
           <p className="body-large max-w-md text-slate md:col-span-4">{siteData.intro.body}</p>
         </div>
 
-        <div className="mt-16 border-t border-line pt-5 md:mt-24">
-          <div className="mb-5 flex items-center justify-between gap-4">
-            <span className="mono-label text-muted">Future client marks</span>
-            <span className="text-[0.68rem] text-muted">Reserved placeholders — no client claims</span>
-          </div>
-          <div className="grid grid-cols-2 border-l border-t border-line md:grid-cols-4">
-            {["Mark / 01", "Mark / 02", "Mark / 03", "Mark / 04"].map((label) => (
-              <div
-                key={label}
-                className="flex h-24 items-center justify-center border-b border-r border-line bg-paper/60 md:h-28"
-              >
-                <span className="mono-label text-ink/25">{label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </Container>
     </section>
   );

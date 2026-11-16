@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/seo-config";
 import type { Metadata } from "next";
 
 // Adapted from _template. All HyperPulse content and publication inputs live here.
@@ -13,7 +14,7 @@ export const publishing = {
   appStoreUrl: null as string | null,
   iosPublicationApproved: false,
   canonicalOrigin:
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://sixthsignallabs.com",
+    SITE_URL,
 } as const;
 
 export const appData = {

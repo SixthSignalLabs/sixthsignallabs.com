@@ -1,0 +1,459 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "title": "Sixth Signal Labs \u2014 Mobile &amp; Web Product Development",
+    "meta": [
+      "<meta name=\"description\" content=\"Sixth Signal Labs designs and engineers high-quality mobile apps, web applications, and digital products for startups and ambitious companies.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 145158,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps",
+    "status": 404,
+    "title": "Sixth Signal Labs \u2014 Mobile &amp; Web Product Development",
+    "meta": [
+      "<meta name=\"robots\" content=\"noindex\"/>",
+      "<meta name=\"description\" content=\"Sixth Signal Labs designs and engineers high-quality mobile apps, web applications, and digital products for startups and ambitious companies.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 11966,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/_template",
+    "status": 404,
+    "title": "Sixth Signal Labs \u2014 Mobile &amp; Web Product Development",
+    "meta": [
+      "<meta name=\"robots\" content=\"noindex\"/>",
+      "<meta name=\"description\" content=\"Sixth Signal Labs designs and engineers high-quality mobile apps, web applications, and digital products for startups and ambitious companies.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 11955,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/arrowlilt",
+    "status": 200,
+    "title": "ArrowLilt \u2014 Clear a path. Grow a little calm.",
+    "meta": [
+      "<meta name=\"description\" content=\"Tap arrows, clear each puzzle, and grow your garden. Play at your own pace.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/arrowlilt\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/arrowlilt\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 100436,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/arrowlilt/privacy",
+    "status": 200,
+    "title": "Privacy Policy | ArrowLilt",
+    "meta": [
+      "<meta name=\"description\" content=\"How ArrowLilt handles information and protects player privacy.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/arrowlilt/privacy\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/arrowlilt/privacy\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 74098,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/arrowlilt/terms",
+    "status": 200,
+    "title": "Terms of Service | ArrowLilt",
+    "meta": [
+      "<meta name=\"description\" content=\"The terms that govern access to and use of ArrowLilt.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/arrowlilt/terms\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/arrowlilt/terms\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 64255,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/filesuite",
+    "status": 200,
+    "title": "FileSuite \u2013 PDF &amp; Photo Tools for Android",
+    "meta": [
+      "<meta name=\"description\" content=\"Compress photos, resize images, convert JPG, PNG and WebP, create PDFs, and optimize supported files with FileSuite for Android.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/filesuite\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/filesuite\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 61695,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/filesuite/privacy",
+    "status": 200,
+    "title": "Privacy Policy \u2013 FileSuite",
+    "meta": [
+      "<meta name=\"description\" content=\"How FileSuite handles selected photos and PDFs, local processing, storage, sharing, and your privacy choices.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/filesuite/privacy\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/filesuite/privacy\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 69765,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/filesuite/terms",
+    "status": 200,
+    "title": "Terms &amp; Conditions \u2013 FileSuite",
+    "meta": [
+      "<meta name=\"description\" content=\"The terms governing FileSuite, including permitted use, file-processing limitations, document verification, ownership, and liability.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/filesuite/terms\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/filesuite/terms\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 71573,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/geopixly",
+    "status": 200,
+    "title": "GeoPixly \u2014 Fast, verifiable location stamping.",
+    "meta": [
+      "<meta name=\"description\" content=\"Camera app that stamps precise GPS, date/time, and field telemetry as a visual overlay onto photos \u2014 on-device. Photos stay on the phone unless the user shares them.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/geopixly\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/geopixly\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 86786,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/geopixly/privacy",
+    "status": 200,
+    "title": "Privacy Policy | GeoPixly",
+    "meta": [
+      "<meta name=\"description\" content=\"How GeoPixly handles photos, location, and related information on your device.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/geopixly/privacy\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/geopixly/privacy\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 70603,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/geopixly/terms",
+    "status": 200,
+    "title": "Terms of Service | GeoPixly",
+    "meta": [
+      "<meta name=\"description\" content=\"The terms that govern access to and use of GeoPixly.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/geopixly/terms\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/geopixly/terms\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 64199,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/hyperpulse",
+    "status": 200,
+    "title": "Plan every set. See your progress. | HyperPulse",
+    "meta": [
+      "<meta name=\"description\" content=\"An offline-first strength-training tracker for planning routines, logging workouts, managing rest periods, and understanding progress from your own training records.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/hyperpulse\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/hyperpulse\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 40548,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/hyperpulse/privacy",
+    "status": 200,
+    "title": "Privacy Policy | HyperPulse",
+    "meta": [
+      "<meta name=\"description\" content=\"How HyperPulse handles local training records, wellness check-ins, exports, and website visits.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/hyperpulse/privacy\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/hyperpulse/privacy\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 50369,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/hyperpulse/support",
+    "status": 200,
+    "title": "Support | HyperPulse",
+    "meta": [
+      "<meta name=\"description\" content=\"Help with HyperPulse routines, workouts, progress, backups, and local data.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/hyperpulse/support\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/hyperpulse/support\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 50337,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/hyperpulse/terms",
+    "status": 200,
+    "title": "Terms of Use | HyperPulse",
+    "meta": [
+      "<meta name=\"description\" content=\"Terms for HyperPulse\u2019s manual workout planning and local training records.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/hyperpulse/terms\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/hyperpulse/terms\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 47531,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/oryfin",
+    "status": 200,
+    "title": "Oryfin \u2014 Your money, finally clear.",
+    "meta": [
+      "<meta name=\"description\" content=\"A local-first personal money tracker for understanding spending, planning budgets, following savings goals, and estimating what may be safe to spend.\"/>",
+      "<meta name=\"robots\" content=\"noindex, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/oryfin\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/oryfin\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 59132,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/oryfin/privacy",
+    "status": 200,
+    "title": "Privacy Policy | Oryfin",
+    "meta": [
+      "<meta name=\"description\" content=\"How Oryfin handles local financial records and service-related information.\"/>",
+      "<meta name=\"robots\" content=\"noindex, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/oryfin/privacy\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/oryfin/privacy\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 108784,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/oryfin/support",
+    "status": 200,
+    "title": "Support | Oryfin",
+    "meta": [
+      "<meta name=\"description\" content=\"Help with Oryfin transactions, budgets, goals, subscriptions, local data, and account configuration.\"/>",
+      "<meta name=\"robots\" content=\"noindex, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/oryfin/support\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/oryfin/support\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 76213,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/oryfin/terms",
+    "status": 200,
+    "title": "Terms of Use | Oryfin",
+    "meta": [
+      "<meta name=\"description\" content=\"Supplemental terms governing use of the Oryfin application and website.\"/>",
+      "<meta name=\"robots\" content=\"noindex, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/oryfin/terms\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/oryfin/terms\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 113256,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/wordlilt",
+    "status": 200,
+    "title": "WordLilt \u2014 Word Search Puzzle | Sixth Signal Labs",
+    "meta": [
+      "<meta name=\"description\" content=\"Discover WordLilt, a colorful word-search puzzle game. Swipe through letter grids, uncover hidden words, and enjoy a satisfying puzzle break.\"/>",
+      "<meta name=\"robots\" content=\"noindex, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/wordlilt\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/wordlilt\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 178094,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/wordlilt/privacy",
+    "status": 200,
+    "title": "Privacy Policy | WordLilt",
+    "meta": [
+      "<meta name=\"description\" content=\"How WordLilt handles information and protects player privacy.\"/>",
+      "<meta name=\"robots\" content=\"noindex, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/wordlilt/privacy\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/wordlilt/privacy\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 64655,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/apps/wordlilt/terms",
+    "status": 200,
+    "title": "Terms of Service | WordLilt",
+    "meta": [
+      "<meta name=\"description\" content=\"The terms that govern access to and use of WordLilt.\"/>",
+      "<meta name=\"robots\" content=\"noindex, follow\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/apps/wordlilt/terms\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/apps/wordlilt/terms\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 60756,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/privacy",
+    "status": 200,
+    "title": "Privacy Policy | Sixth Signal Labs",
+    "meta": [
+      "<meta name=\"description\" content=\"How Sixth Signal Labs collects, uses, discloses, and protects information across its website, services, and business operations.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/privacy\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/privacy\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 125365,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/privcy",
+    "status": 307,
+    "title": "Sixth Signal Labs \u2014 Mobile &amp; Web Product Development",
+    "meta": [
+      "<meta name=\"description\" content=\"Sixth Signal Labs designs and engineers high-quality mobile apps, web applications, and digital products for startups and ambitious companies.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 11596,
+    "content": null,
+    "error": ""
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "title": null,
+    "meta": [],
+    "canonical": [],
+    "xRobots": [],
+    "bytes": 3599,
+    "content": "# As a condition of accessing this website, you agree to abide by the following\n# content signals:\n\n# (a)  If a Content-Signal = yes, you may collect content for the corresponding\n#      use.\n# (b)  If a Content-Signal = no, you may not collect content for the\n#      corresponding use.\n# (c)  If the website operator does not include a Content-Signal for a\n#      corresponding use, the website operator neither grants nor restricts\n#      permission via Content-Signal with respect to the corresponding use.\n\n# The content signals and their meanings are:\n\n# search:   building a search index and providing search results (e.g., returning\n#           hyperlinks and short excerpts from your website's contents). Search does not\n#           include providing AI-generated search summaries.\n# ai-input: inputting content into one or more AI models (e.g., retrieval\n#           augmented generation, grounding, or other real-time taking of content for\n#           generative AI search answers).\n# ai-train: training or fine-tuning AI models.\n# use:      how AI systems may consume the content (immediate, reference, or full).\n\n# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF\n# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT\n# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.\n\n# BEGIN Cloudflare Managed content\n\n\nUser-agent: *\nContent-Signal: search=yes,ai-train=no,use=reference\nAllow: /\n\n# Training crawlers\nUser-agent: Amazonbot\nDisallow: /\n\nUser-agent: Applebot-Extended\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ClaudeBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: omgili\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Claude-Web\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\nUser-agent: MistralAI-Training\nDisallow: /\n\nUser-agent: meta-externalagent\nDisallow: /\n\nUser-agent: GoogleOther\nDisallow: /\n\nUser-agent: Baiduspider\nDisallow: /\n\nUser-agent: PetalBot\nDisallow: /\n\nUser-agent: AwarioSmartBot\nUser-agent: AwarioRssBot\nDisallow: /\n\nUser-agent: Google-CloudVertexBot\nDisallow: /\n\nUser-agent: QualifiedBot\nDisallow: /\n\nUser-agent: Cotoyogi\nDisallow: /\n\nUser-agent: ICC-Crawler\nDisallow: /\n\nUser-agent: atlassian-bot\nDisallow: /\n\nUser-agent: FishBot\nDisallow: /\n\nUser-agent: BorderxBot\nDisallow: /\n\nUser-agent: NavuBot\nDisallow: /\n\nUser-agent: SemrushBot-SWA\nDisallow: /\n\nUser-agent: WARDBot\nDisallow: /\n\nUser-agent: magpie-crawler\nDisallow: /\n\nUser-agent: KimiBot\nDisallow: /\n\nUser-agent: CitibotSiteCrawler\nDisallow: /\n\n# END Cloudflare Managed Content\n\nUser-Agent: *\nAllow: /\n\nHost: https://sixthsignallabs.com\nSitemap: https://sixthsignallabs.com/sitemap.xml\n",
+    "error": ""
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "title": null,
+    "meta": [],
+    "canonical": [],
+    "xRobots": [],
+    "bytes": 3437,
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://sixthsignallabs.com</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/privacy</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.3</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/terms</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.3</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/filesuite</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/filesuite/privacy</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.4</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/filesuite/terms</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.4</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/hyperpulse</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/hyperpulse/support</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.5</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/hyperpulse/privacy</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.4</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/hyperpulse/terms</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.4</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/oryfin</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/oryfin/support</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.5</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/oryfin/privacy</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.4</priority>\n</url>\n<url>\n<loc>https://sixthsignallabs.com/apps/oryfin/terms</loc>\n<lastmod>2026-11-15T06:36:23.529Z</lastmod>\n<changefreq>yearly</changefreq>\n<priority>0.4</priority>\n</url>\n</urlset>\n",
+    "error": ""
+  },
+  {
+    "path": "/terms",
+    "status": 200,
+    "title": "Terms of Service | Sixth Signal Labs",
+    "meta": [
+      "<meta name=\"description\" content=\"Terms governing access to and use of the Sixth Signal Labs website, services, digital products, and related materials.\"/>",
+      "<meta property=\"og:url\" content=\"https://sixthsignallabs.com/terms\"/>"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://sixthsignallabs.com/terms\"/>"
+    ],
+    "xRobots": [],
+    "bytes": 119900,
+    "content": null,
+    "error": ""
+  }
+]

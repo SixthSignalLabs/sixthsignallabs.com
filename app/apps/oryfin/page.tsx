@@ -1,3 +1,4 @@
+import { withPageSocial } from "@/lib/page-social";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +14,7 @@ import {
   verifiedCapabilities,
 } from "./_data/oryfin-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocial({
   title: { absolute: `${oryfin.name} — ${oryfin.tagline}` },
   description: oryfin.description,
   alternates: { canonical: getOryfinUrl() },
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     title: `${oryfin.name} — ${oryfin.tagline}`,
     description: oryfin.description,
   },
-};
+}, "/apps/oryfin/oryfin-app-icon-1024.png");
 
 const planHighlights = [
   { label: "Free", detail: "Everyday tracking, recurring schedules, security, three monthly budgets, one goal, and six-month insights." },

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/seo-config";
 // Customize this file after copying `_template`; it is the single source of
 // app-specific content, links, metadata, features, and draft legal text.
 
@@ -49,7 +50,7 @@ export const appData = {
   },
   supportEmail: APP_SUPPORT_EMAIL,
   developerName: "Sixth Signal Labs",
-  developerUrl: "https://sixthsignallabs.com",
+  developerUrl: "https://www.sixthsignallabs.com",
   canonicalBasePath: "/apps/APP_SLUG",
   features: [
     {
@@ -226,7 +227,7 @@ export const appData = {
 } as const;
 
 export const deploymentSiteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sixthsignallabs.com";
+  SITE_URL;
 
 export function getAppUrl(suffix = "") {
   return new URL(`${appData.canonicalBasePath}${suffix}`, deploymentSiteUrl).toString();
